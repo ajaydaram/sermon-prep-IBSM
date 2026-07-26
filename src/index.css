@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Force palette mapping to High Density Theme */
+  --color-slate-50: #E4E3E0;
+  --color-slate-100: #D4D3D0;
+  --color-slate-150: #141414;
+  --color-slate-200: #141414;
+  --color-slate-300: #141414;
+  --color-slate-400: #141414;
+  --color-slate-500: #141414;
+  --color-slate-600: #141414;
+  --color-slate-700: #141414;
+  --color-slate-800: #141414;
+  --color-slate-900: #0a0a0a;
+
+  --color-gray-50: #fcfbfa;
+  --color-gray-100: #D4D3D0;
+  --color-gray-150: #141414;
+  --color-gray-200: #141414;
+  --color-gray-300: #141414;
+  --color-gray-400: #141414;
+
+  /* Accents & category colors mapped to clean high contrast colors */
+  --color-emerald-50: #D4D3D0;
+  --color-emerald-100: #141414;
+  --color-emerald-200: #141414;
+  --color-emerald-700: #141414;
+  --color-emerald-800: #141414;
+  --color-emerald-950: #141414;
+
+  --color-sky-50: #D4D3D0;
+  --color-sky-100: #141414;
+  --color-sky-200: #141414;
+  --color-sky-800: #141414;
+  --color-sky-950: #141414;
+
+  --color-purple-50: #D4D3D0;
+  --color-purple-100: #141414;
+  --color-purple-200: #141414;
+  --color-purple-800: #141414;
+  --color-purple-950: #141414;
+
+  --color-amber-50: #D4D3D0;
+  --color-amber-100: #141414;
+  --color-amber-200: #141414;
+  --color-amber-800: #141414;
+  --color-amber-900: #141414;
+
+  --color-rose-50: #D4D3D0;
+  --color-rose-100: #141414;
+  --color-rose-200: #141414;
+  --color-rose-800: #141414;
+  --color-rose-950: #141414;
+
+  /* Border radius override to sharpen all elements */
+  --radius-xl: 0px;
+  --radius-lg: 0px;
+  --radius-md: 0px;
+  --radius-sm: 0px;
+
+  /* Flatten all default shadow styling */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
+  --shadow-2xs: none;
+  --shadow-xs: none;
+}
+
+/* Custom globally applied elements for High Density aesthetic */
+body {
+  background-color: #E4E3E0;
+  color: #141414;
+  font-family: var(--font-sans);
+}
+
+input, textarea, select {
+  background-color: #ffffff !important;
+  color: #141414 !important;
+  border: 1px solid #141414 !important;
+  border-radius: 0px !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 1px #141414 !important;
+}
+
+button {
+  border-radius: 0px !important;
+}
+
+/* Scrollbar customizations for high density content */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E4E3E0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
