@@ -75,7 +75,7 @@ const preloadTimothy: BookChartData = {
 export default function VisualChartBuilder() {
   const [activeChartMode, setActiveChartMode] = useState<
     "canvas" | "hierarchical" | "matrix" | "classic"
-  >("canvas");
+  >("matrix");
 
   return (
     <div className="space-y-6 font-sans" id="visual-chart-builder-root">
