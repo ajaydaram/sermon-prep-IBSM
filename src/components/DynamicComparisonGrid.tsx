@@ -126,8 +126,96 @@ const PRESET_SOIL_PARABLES: MatrixGrid = {
   }
 };
 
+// Preset 3: Learning Task B06 Twelve Disciples Comparison Matrix (200 Points)
+const PRESET_TWELVE_DISCIPLES: MatrixGrid = {
+  id: "matrix-b06-disciples",
+  title: "LEARNING TASK B06: COMPARATIVE CHART OF THE TWELVE DISCIPLES (200 PTS)",
+  description: "Comparative exegesis of the four apostolic lists in Matthew 10:2-4, Mark 3:16-19, Luke 6:14-16, and Acts 1:13.",
+  columns: [
+    { id: "c-matt", header: "Matthew 10:2-4", subtitle: "Gospel of Matthew", color: "#E0E7FF" },
+    { id: "c-mark", header: "Mark 3:16-19", subtitle: "Gospel of Mark", color: "#FEF3C7" },
+    { id: "c-luke", header: "Luke 6:14-16", subtitle: "Gospel of Luke", color: "#FCE7F3" },
+    { id: "c-acts", header: "Acts 1:13", subtitle: "Book of Acts", color: "#D1FAE5" }
+  ],
+  rows: [
+    { id: "r-g1p1", label: "Group 1 - Pos 1 (Leader)", category: "Group 1 (Positions 1-4)" },
+    { id: "r-g1p2", label: "Group 1 - Pos 2", category: "Group 1 (Positions 1-4)" },
+    { id: "r-g1p3", label: "Group 1 - Pos 3", category: "Group 1 (Positions 1-4)" },
+    { id: "r-g1p4", label: "Group 1 - Pos 4", category: "Group 1 (Positions 1-4)" },
+    { id: "r-g2p5", label: "Group 2 - Pos 5 (Leader)", category: "Group 2 (Positions 5-8)" },
+    { id: "r-g2p6", label: "Group 2 - Pos 6", category: "Group 2 (Positions 5-8)" },
+    { id: "r-g2p7", label: "Group 2 - Pos 7", category: "Group 2 (Positions 5-8)" },
+    { id: "r-g2p8", label: "Group 2 - Pos 8", category: "Group 2 (Positions 5-8)" },
+    { id: "r-g3p9", label: "Group 3 - Pos 9 (Leader)", category: "Group 3 (Positions 9-12)" },
+    { id: "r-g3p10", label: "Group 3 - Pos 10", category: "Group 3 (Positions 9-12)" },
+    { id: "r-g3p11", label: "Group 3 - Pos 11", category: "Group 3 (Positions 9-12)" },
+    { id: "r-g3p12", label: "Group 3 - Pos 12", category: "Group 3 (Positions 9-12)" },
+  ],
+  cells: {
+    "r-g1p1_c-matt": "1. Simon (called Peter) [First]",
+    "r-g1p1_c-mark": "1. Simon (whom He named Peter)",
+    "r-g1p1_c-luke": "1. Simon (whom He named Peter)",
+    "r-g1p1_c-acts": "1. Peter",
+
+    "r-g1p2_c-matt": "2. Andrew his brother",
+    "r-g1p2_c-mark": "2. James son of Zebedee",
+    "r-g1p2_c-luke": "2. Andrew his brother",
+    "r-g1p2_c-acts": "2. John",
+
+    "r-g1p3_c-matt": "3. James son of Zebedee",
+    "r-g1p3_c-mark": "3. John brother of James (Boanerges)",
+    "r-g1p3_c-luke": "3. James",
+    "r-g1p3_c-acts": "3. James",
+
+    "r-g1p4_c-matt": "4. John his brother",
+    "r-g1p4_c-mark": "4. Andrew",
+    "r-g1p4_c-luke": "4. John",
+    "r-g1p4_c-acts": "4. Andrew",
+
+    "r-g2p5_c-matt": "5. Philip",
+    "r-g2p5_c-mark": "5. Philip",
+    "r-g2p5_c-luke": "5. Philip",
+    "r-g2p5_c-acts": "5. Philip",
+
+    "r-g2p6_c-matt": "6. Bartholomew",
+    "r-g2p6_c-mark": "6. Bartholomew",
+    "r-g2p6_c-luke": "6. Bartholomew",
+    "r-g2p6_c-acts": "6. Thomas",
+
+    "r-g2p7_c-matt": "7. Thomas",
+    "r-g2p7_c-mark": "7. Matthew",
+    "r-g2p7_c-luke": "7. Matthew",
+    "r-g2p7_c-acts": "7. Bartholomew",
+
+    "r-g2p8_c-matt": "8. Matthew the tax collector",
+    "r-g2p8_c-mark": "8. Thomas",
+    "r-g2p8_c-luke": "8. Thomas",
+    "r-g2p8_c-acts": "8. Matthew",
+
+    "r-g3p9_c-matt": "9. James son of Alphaeus",
+    "r-g3p9_c-mark": "9. James son of Alphaeus",
+    "r-g3p9_c-luke": "9. James son of Alphaeus",
+    "r-g3p9_c-acts": "9. James son of Alphaeus",
+
+    "r-g3p10_c-matt": "10. Thaddaeus (Labbaeus)",
+    "r-g3p10_c-mark": "10. Thaddaeus",
+    "r-g3p10_c-luke": "10. Simon called the Zealot",
+    "r-g3p10_c-acts": "10. Simon the Zealot",
+
+    "r-g3p11_c-matt": "11. Simon the Cananaean",
+    "r-g3p11_c-mark": "11. Simon the Cananaean",
+    "r-g3p11_c-luke": "11. Judas son of James",
+    "r-g3p11_c-acts": "11. Judas son of James",
+
+    "r-g3p12_c-matt": "12. Judas Iscariot (betrayer)",
+    "r-g3p12_c-mark": "12. Judas Iscariot (betrayer)",
+    "r-g3p12_c-luke": "12. Judas Iscariot (traitor)",
+    "r-g3p12_c-acts": "[Omitted: Dead (Acts 1:16-20)]",
+  }
+};
+
 export default function DynamicComparisonGrid() {
-  const [matrix, setMatrix] = useState<MatrixGrid>(PRESET_SEVEN_CHURCHES);
+  const [matrix, setMatrix] = useState<MatrixGrid>(PRESET_TWELVE_DISCIPLES);
   const [searchTerm, setSearchTerm] = useState("");
   const [copied, setCopied] = useState(false);
 
@@ -142,8 +230,10 @@ export default function DynamicComparisonGrid() {
   const [newColHeader, setNewColHeader] = useState("");
   const [newRowLabel, setNewRowLabel] = useState("");
 
-  const handleSelectPreset = (type: "rev" | "matt" | "blank") => {
-    if (type === "rev") {
+  const handleSelectPreset = (type: "disciples" | "rev" | "matt" | "blank") => {
+    if (type === "disciples") {
+      setMatrix(PRESET_TWELVE_DISCIPLES);
+    } else if (type === "rev") {
       setMatrix(PRESET_SEVEN_CHURCHES);
     } else if (type === "matt") {
       setMatrix(PRESET_SOIL_PARABLES);
@@ -256,6 +346,16 @@ export default function DynamicComparisonGrid() {
         </div>
 
         <div className="flex flex-wrap gap-2">
+          <button
+            onClick={() => handleSelectPreset("disciples")}
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all cursor-pointer ${
+              matrix.id.includes("disciples")
+                ? "bg-amber-400 border-amber-500 text-slate-950 font-extrabold shadow-sm"
+                : "border-gray-300 text-slate-700 hover:bg-slate-100"
+            }`}
+          >
+            ⭐ Task B06: Twelve Disciples (200 Pts)
+          </button>
           <button
             onClick={() => handleSelectPreset("rev")}
             className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all cursor-pointer ${
