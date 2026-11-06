@@ -317,220 +317,171 @@ God questioned Jonah a second time, asking if he had good reason to be angry abo
       });
 
 const createDefaultPhilemonArgument = () => ({
-  bookChartTheme: "The appeal of Paul’s Christlike leadership urged Philemon to receive his converted runaway slave Onesimus no longer as a slave, but as a beloved brother in Christ, securing gospel reconciliation through sacrificial love and personal accountability (Phlm 1–25).",
+  bookChartTheme: "The appeal of Paul\u2019s Christlike leadership urged Philemon to receive his converted runaway slave Onesimus no longer as a slave, but as a beloved brother in Christ, securing gospel reconciliation through sacrificial love and personal accountability (Phlm 1\u201325).",
   bookNameLabel: "Philemon",
   actorRowLabel: "Involved party",
   gradeRowLabel: "Leadership principle",
-  introductoryMaterial: `Introduction
-The Letter to Philemon is Paul’s shortest, most intensely personal, and diplomatically profound epistle. While ostensibly addressing a private domestic dispute within an ancient Greco-Roman household, this brief letter provides an enduring masterclass in biblical leadership. In it, the Apostle Paul demonstrated how the transforming power of the gospel redefines coercive societal hierarchies into sacrificial spiritual brotherhood within the household of God, showing that true spiritual leadership relies on relational persuasion, moral elevation, and vicarious sacrifice rather than authoritarian compulsion.
-
-Author
-The Apostle Paul authored the epistle, identifying himself explicitly by name as “a prisoner of Christ Jesus” alongside his trusted coworker Timothy (Phlm 1, 9, 19). Paul affirmed his direct personal authorship and legal commitment by penning the formal promissory debt guarantee with his own hand (Phlm 19).
-
-Date of Writing
-Paul composed this letter approximately AD 60–62 during his first Roman imprisonment under house arrest in his own rented quarters (Acts 28:16, 30–31). It was dispatched concurrently with the Epistle to the Colossians via Tychicus and the returning Onesimus (Col 4:7–9).
-
-Historical Setting
-Historically, the epistle was situated within the Pax Romana under the early reign of Emperor Nero (AD 54–68), where Roman slavery was an entrenched, legally coercive empire-wide institution maintained through warfare, natural reproduction, piracy, and economic destitution.[1] Under Roman law (dominica potestas), slaveholders possessed virtually unchecked legal dominion over enslaved persons, rendering a runaway slave (fugitivus) liable to severe corporal punishment, branding with the letters FUG upon the forehead, confinement in private workhouses (ergastula), or execution by crucifixion.[2] However, Roman custom also recognized the principle of amicus domini—where an enslaved person who fled in fear of a master’s wrath could seek refuge with a respected friend of the master to negotiate mediation and reconciliation without being classified as a criminal fugitive.[3] Even upon potential manumission, a freedperson (libertus) remained bound to their former master through continuing patronal duties of reverence (obsequium) and customary labor services (operae).[4] In the Lycus Valley city of Colossae, Philemon hosted a fledgling house church; the sudden return of his runaway slave Onesimus—now converted to Christ through Paul—confronted this congregation with a profound theological and social test of whether the gospel of grace could genuinely overturn Roman legal hierarchy in favor of Christian brotherhood.[5]
-
-Place of Writing
-Paul wrote this letter from Rome while under military custody in his rented quarters awaiting his formal legal hearing before Caesar (Acts 28:16, 30; Phlm 1, 9, 23). From this place of confinement, Paul actively proclaimed the kingdom of God and mobilized a network of missionary associates.
-
-Recipients
-The letter was addressed primarily to Philemon, a wealthy Christian citizen and patron in Colossae, along with Apphia (“our sister”), Archippus (“our fellow soldier”), and the entire local church meeting in Philemon’s residence (Phlm 1–2). Addressing the entire congregation placed Philemon’s private decision within the loving accountability, public visibility, and communal support of the Christian assembly.
-
-Occasion and Purpose
-The occasion was the return of the converted slave Onesimus to Colossae carrying this letter from Paul. Paul’s purpose was to appeal to Philemon on the basis of Christian love rather than apostolic command, urging him to forgive Onesimus, cancel any outstanding financial or legal debts, and receive him back no longer merely as an enslaved person, but as a beloved brother in the Lord. Furthermore, Paul sought to inspire Philemon to do even more than requested, releasing Onesimus for continuing gospel partnership in apostolic ministry.
-
-Theme
-The appeal of Paul’s Christlike leadership urged Philemon to receive his converted runaway slave Onesimus no longer as a slave, but as a beloved brother in Christ, securing gospel reconciliation through sacrificial love and personal accountability (Phlm 1–25).`,
+  introductoryMaterial: "Introduction\nThe Letter to Philemon is Paul\u2019s shortest, most intensely personal, and sociologically revolutionary prison epistle. Composed during his Roman custody, the epistle bridges the profound chasm between ancient Roman legal coercion and the radical brotherhood of the gospel of Jesus Christ. Through a delicate masterpiece of pastoral persuasion, Paul interceded on behalf of Onesimus\u2014a runaway slave who had fled his master Philemon, encountered Paul in chains, and experienced spiritual regeneration. Rather than commanding compliance through apostolic authority, Paul modeled Christlike leadership by appealing on the basis of sacrificial love, assuming financial liability, and establishing mutual accountability.\n\nAuthor\nThe Apostle Paul authored the epistle, identifying himself explicitly by name as \u201ca prisoner of Christ Jesus\u201d alongside his trusted coworker Timothy (Phlm 1, 9, 19). Paul affirmed his direct personal authorship and legal commitment by penning the formal promissory debt guarantee with his own hand (Phlm 19).\n\nDate of writing\nThe date of writing was approximately AD 60\u201362 during Paul\u2019s first Roman imprisonment under house arrest in his own rented quarters (Acts 28:16, 30\u201331). It was dispatched concurrently with the Epistle to the Colossians via Tychicus and the returning Onesimus (Col 4:7\u20139).\n\nHistorical Setting\nHistorically, the epistle was situated within the Pax Romana under the early reign of Emperor Nero (AD 54\u201368), where Roman slavery was an entrenched, legally coercive empire-wide institution maintained through warfare, natural reproduction, piracy, and economic destitution.[1] Under Roman law (dominica potestas), slaveholders possessed virtually unchecked legal dominion over enslaved persons, rendering a runaway slave (fugitivus) liable to severe corporal punishment, branding with the letters FUG upon the forehead, confinement in private workhouses (ergastula), or execution by crucifixion.[2] However, Roman custom also recognized the principle of amicus domini\u2014where an enslaved person who fled in fear of a master\u2019s wrath could seek refuge with a respected friend of the master to negotiate mediation and reconciliation without being classified as a criminal fugitive.[3] Even upon potential manumission, a freedperson (libertus) remained bound to their former master through continuing patronal duties of reverence (obsequium) and customary labor services (operae).[4] In the Lycus Valley city of Colossae, Philemon hosted a fledgling house church; the sudden return of his runaway slave Onesimus\u2014now converted to Christ through Paul\u2014confronted this congregation with a profound theological and social test of whether the gospel of grace could genuinely overturn Roman legal hierarchy in favor of Christian brotherhood.[5]\n\nPlace of Writing\nThe Epistle to Philemon was written in Rome while Paul was under military custody awaiting trial before Emperor Nero (Acts 28:16, 30\u201331; Phlm 1, 9, 10, 13, 23).\n\nRecipients\nThe letter was addressed primarily to Philemon, a wealthy Christian citizen and slaveholder in Colossae, together with Apphia (likely his wife), Archippus (a ministry coworker), and the entire local church gathering in Philemon\u2019s home (Phlm 1\u20132).\n\nOccasion and Purpose\nThe occasion was the return of the converted slave Onesimus to Colossae under the apostolic protection of Paul\u2019s letter. Paul\u2019s purpose was to appeal affectionately to Philemon to forgive and receive Onesimus no longer as a mere fugitive slave, but as a beloved brother in the Lord, charging any financial debt to Paul\u2019s personal account and preparing for Paul\u2019s prospective visit.\n\nTheme\nThe appeal of Paul\u2019s Christlike leadership urged Philemon to receive his converted runaway slave Onesimus no longer as a slave, but as a beloved brother in Christ, securing gospel reconciliation through sacrificial love and personal accountability (Phlm 1\u201325).",
   bookChart: [
     {
-      id: 'p1',
-      segment: '1–3',
-      title: 'Prisoner’s warm greeting',
-      groupHeader: 'Paul appealed for Onesimus’s reception in love',
-      subGroupHeader: 'Preparing Philemon’s heart',
-      actor: 'Paul, Timothy & Philemon’s church',
-      grade: 'Humble identity: “prisoner” of Christ (v. 1)',
-      genre: 'Epistolary Opening: Greeting (1–3)',
-      godAction: 'Master & slave → Co-workers in Christ',
-      setting: 'Roman prison → Colossian house church',
-      relations: 'Contrast: Rather than claiming apostolic authority, Paul identifies as "a prisoner of Christ Jesus" (v. 1), addressing Philemon and the house church.'
+        "id": "p1",
+        "segment": "1\u20133",
+        "title": "Prisoner\u2019s warm greeting",
+        "groupHeader": "Paul appealed for Onesimus\u2019s reception in love",
+        "subGroupHeader": "Preparing Philemon\u2019s heart",
+        "actor": "Paul, Timothy & Philemon\u2019s church",
+        "grade": "Humble identity: \u201cprisoner\u201d of Christ (v. 1)",
+        "genre": "Epistolary Opening: Greeting (1\u20133)",
+        "godAction": "Master & slave \u2192 Co-workers in Christ",
+        "setting": "Roman prison \u2192 Colossian house church",
+        "relations": "Contrast: Rather than claiming apostolic authority, Paul identifies as \"a prisoner of Christ Jesus\" (v. 1), addressing Philemon and the house church."
     },
     {
-      id: 'p2',
-      segment: '4–7',
-      title: 'Thanksgiving for love',
-      groupHeader: 'Paul appealed for Onesimus’s reception in love',
-      subGroupHeader: 'Preparing Philemon’s heart',
-      actor: 'Paul & Philemon (with all saints)',
-      grade: 'Affirming & praying before appealing (vv. 4–7)',
-      genre: 'Thanksgiving & Intercession (4–7)',
-      godAction: 'Rejoicing in fruit of love among saints',
-      setting: 'Personal prayer of Apostle in chains',
-      relations: 'Causation: Philemon’s proven record of refreshing the hearts of the saints (splagchna, v. 7) provides the moral basis for Paul’s appeal.'
+        "id": "p2",
+        "segment": "4\u20137",
+        "title": "Thanksgiving for love",
+        "groupHeader": "Paul appealed for Onesimus\u2019s reception in love",
+        "subGroupHeader": "Preparing Philemon\u2019s heart",
+        "actor": "Paul & Philemon (with all saints)",
+        "grade": "Affirming & praying before appealing (vv. 4\u20137)",
+        "genre": "Thanksgiving & Intercession (4\u20137)",
+        "godAction": "Rejoicing in fruit of love among saints",
+        "setting": "Personal prayer of Apostle in chains",
+        "relations": "Causation: Philemon\u2019s proven record of refreshing the hearts of the saints (splagchna, v. 7) provides the moral basis for Paul\u2019s appeal."
     },
     {
-      id: 'p3',
-      segment: '8–9',
-      title: 'Appeal of love',
-      groupHeader: 'Paul appealed for Onesimus’s reception in love',
-      subGroupHeader: 'Interceding for Onesimus',
-      actor: 'Paul & Philemon',
-      grade: 'Persuasion over compulsion: "for love’s sake" (v. 9)',
-      genre: 'Apostolic Plea / Intercession (8–9)',
-      godAction: 'Renouncing apostolic command for agape',
-      setting: 'Relational appeal as "the aged" prisoner',
-      relations: 'Contrast: Paul has full apostolic authority to "command" (epitassein, v. 8), but appeals "for love’s sake" (dia tēn agapēn, v. 9) to protect voluntary obedience.'
+        "id": "p3",
+        "segment": "8\u201316",
+        "title": "Interceding for Onesimus",
+        "groupHeader": "Paul appealed for Onesimus\u2019s reception in love",
+        "subGroupHeader": "Interceding for Onesimus",
+        "actor": "Paul, Onesimus & Philemon",
+        "grade": "Persuasion over compulsion & brotherhood (vv. 9, 16)",
+        "genre": "Apostolic Plea & Adoption into Brotherhood (8\u201316)",
+        "godAction": "Transforming fugitive slave into beloved brother",
+        "setting": "Roman chains \u2192 Sovereign divine providence",
+        "relations": "Contrast & Climax: Paul renounces command to appeal in agape (vv. 8\u20139); Onesimus was separated briefly to be restored forever as a beloved brother (vv. 15\u201316)."
     },
     {
-      id: 'p4',
-      segment: '10–16',
-      title: 'Receiving a brother',
-      groupHeader: 'Paul appealed for Onesimus’s reception in love',
-      subGroupHeader: 'Interceding for Onesimus',
-      actor: 'Paul, Onesimus & Philemon',
-      grade: 'Restorative advocacy: "my child... beloved brother" (vv. 10, 16)',
-      genre: 'Climax of Petition: Adoption & Brotherhood (10–16)',
-      godAction: 'Transforming fugitive slave into beloved brother',
-      setting: 'Sovereign providence in human estrangement',
-      relations: 'Climax & Purpose: Onesimus was separated "for a while" that Philemon might have him forever, "no longer as a slave, but more than a slave, a beloved brother" (v. 16).'
+        "id": "p4",
+        "segment": "17\u201320",
+        "title": "Pledging debt repayment",
+        "groupHeader": "Paul sealed the reconciliation through partnership",
+        "subGroupHeader": "Assuming debt and confidence",
+        "actor": "Paul & Philemon (for Onesimus)",
+        "grade": "Sacrificial substitution: \u201ccharge that to my account\u201d (v. 18)",
+        "genre": "Legal Promissory Note / Guarantee (17\u201320)",
+        "godAction": "Paul acts as surety, modeling Christ\u2019s cross",
+        "setting": "Formal handwriting: \u201cI, Paul, write this\u201d (v. 19)",
+        "relations": "Substantiation: Paul links his appeal to partnership (koin\u014dnon, v. 17), pledging his own hand to repay any wrong or debt incurred by Onesimus (v. 19)."
     },
     {
-      id: 'p5',
-      segment: '17–20',
-      title: 'Pledging debt repayment',
-      groupHeader: 'Paul sealed the reconciliation through partnership',
-      subGroupHeader: 'Assuming debt and confidence',
-      actor: 'Paul & Philemon (for Onesimus)',
-      grade: 'Sacrificial substitution: "charge that to my account" (v. 18)',
-      genre: 'Legal Promissory Note / Guarantee (17–20)',
-      godAction: 'Paul acts as surety, modeling Christ’s cross',
-      setting: 'Formal handwriting: "I, Paul, write this" (v. 19)',
-      relations: 'Substantiation: Paul links his appeal to partnership (koinōnon, v. 17), pledging his own hand to repay any wrong or debt incurred by Onesimus (v. 19).'
+        "id": "p5",
+        "segment": "21",
+        "title": "Confidence in obedience",
+        "groupHeader": "Paul sealed the reconciliation through partnership",
+        "subGroupHeader": "Assuming debt and confidence",
+        "actor": "Paul & Philemon",
+        "grade": "High-trust leadership: \u201cdo even more than I say\u201d (v. 21)",
+        "genre": "Pastoral Affirmation & Trust (21)",
+        "godAction": "Inspiring voluntary obedience exceeding command",
+        "setting": "Absolute confidence in Philemon\u2019s love",
+        "relations": "Progression: Paul expresses absolute confidence that Philemon will do even more than what is asked (hyper ha leg\u014d, v. 21)."
     },
     {
-      id: 'p6',
-      segment: '21',
-      title: 'Confidence in obedience',
-      groupHeader: 'Paul sealed the reconciliation through partnership',
-      subGroupHeader: 'Assuming debt and confidence',
-      actor: 'Paul & Philemon',
-      grade: 'High-trust leadership: "do even more than I say" (v. 21)',
-      genre: 'Pastoral Affirmation & Trust (21)',
-      godAction: 'Inspiring voluntary obedience exceeding command',
-      setting: 'Absolute confidence in Philemon’s love',
-      relations: 'Progression: Paul expresses absolute confidence that Philemon will do even more than what is asked (hyper ha legō, v. 21).'
+        "id": "p6",
+        "segment": "22",
+        "title": "Guest room request",
+        "groupHeader": "Paul sealed the reconciliation through partnership",
+        "subGroupHeader": "Expecting visit and fellowship",
+        "actor": "Paul & Philemon",
+        "grade": "Pastoral accountability: preparing a guest room (v. 22)",
+        "genre": "Personal Request & Anticipated Visit (22)",
+        "godAction": "Expectation of release through church\u2019s prayers",
+        "setting": "Colossian hospitality anticipating arrival",
+        "relations": "Accountability: Requesting a guest room reminds Philemon that Paul expects to see the fruit of reconciliation in person through their prayers (v. 22)."
     },
     {
-      id: 'p7',
-      segment: '22',
-      title: 'Guest room request',
-      groupHeader: 'Paul sealed the reconciliation through partnership',
-      subGroupHeader: 'Expecting visit and fellowship',
-      actor: 'Paul & Philemon',
-      grade: 'Pastoral accountability: preparing a guest room (v. 22)',
-      genre: 'Personal Request & Anticipated Visit (22)',
-      godAction: 'Expectation of release through church’s prayers',
-      setting: 'Colossian hospitality anticipating arrival',
-      relations: 'Accountability: Requesting a guest room reminds Philemon that Paul expects to see the fruit of reconciliation in person through their prayers (v. 22).'
-    },
-    {
-      id: 'p8',
-      segment: '23–25',
-      title: 'Final greetings and grace',
-      groupHeader: 'Paul sealed the reconciliation through partnership',
-      subGroupHeader: 'Expecting visit and fellowship',
-      actor: 'Paul, Coworkers (Mark, Luke) & Church',
-      grade: 'Restored ministry team & corporate grace (vv. 23–25)',
-      genre: 'Epistolary Closing: Greetings & Benediction (23–25)',
-      godAction: 'Uniting saints in Christ across social barriers',
-      setting: 'Fellow workers in Rome sending greetings to Colossae',
-      relations: 'Inclusio: Epaphras, Mark (restored deserter), Aristarchus, Demas, and Luke join Paul, closing with grace to "your spirit" (plural, v. 25).'
+        "id": "p7",
+        "segment": "23\u201325",
+        "title": "Final greetings and grace",
+        "groupHeader": "Paul sealed the reconciliation through partnership",
+        "subGroupHeader": "Expecting visit and fellowship",
+        "actor": "Paul, Coworkers (Mark, Luke) & Church",
+        "grade": "Restored ministry team & corporate grace (vv. 23\u201325)",
+        "genre": "Epistolary Closing: Greetings & Benediction (23\u201325)",
+        "godAction": "Uniting saints in Christ across social barriers",
+        "setting": "Fellow workers in Rome sending greetings to Colossae",
+        "relations": "Inclusio: Epaphras, Mark (restored deserter), Aristarchus, Demas, and Luke join Paul, closing with grace to \u201cyour spirit\u201d (plural, v. 25)."
     }
-  ],
+],
   gridChart: {
-    headers: ['Topics', 'I. Paul appealed for Onesimus’s reception in love (vv. 1–16)', 'II. Paul sealed the reconciliation through partnership (vv. 17–25)'],
-    rows: [
-      { id: 'pg0', label: 'Epistolary Structure', cells: ['Opening: Salutation (vv. 1–3) & Thanksgiving/Prayer (vv. 4–7); Body: Appeal of Love (vv. 8–9) & Plea for Brother (vv. 10–16)', 'Body: Partnership Pledge (vv. 17–20), Confidence (v. 21), Guest Room (v. 22) & Closing Greetings/Grace (vv. 23–25)'] },
-      { id: 'pg1', label: 'Involved party', cells: ['Paul ("prisoner"), Timothy, Philemon, Apphia, Archippus, House Church & Onesimus ("child")', 'Paul ("partner"), Philemon ("brother"), Onesimus & 5 Fellow Workers (Mark, Luke, etc.)'] },
-      { id: 'pg2', label: 'Biblical Leadership Principle', cells: ['Humble identification (laying aside rank) + Affirmation before asking + Appealing in love over command + Seeking voluntary consent', 'Sacrificial cost-bearing (promissory note) + Inspiring exceeding obedience + Personal pastoral accountability + Corporate grace'] },
-      { id: 'pg3', label: '1st-C. Slavery vs. Gospel', cells: ['Earthly master & runaway slave → Beloved brother in the flesh and in the Lord (vv. 11, 16)', 'Legal retribution & liabilities → Imputed to Paul’s account; community transformed under grace'] },
-      { id: 'pg4', label: 'Setting / Atmosphere', cells: ['Roman prison to Colossian house church (warm, prayerful, vulnerable, urgent)', 'Signed pledge in Paul’s hand → Lodging prepared in prayer → Apostolic circle united in grace'] }
+    "headers": [
+        "Topics",
+        "I. Paul appealed for Onesimus\u2019s reception in love (vv. 1\u201316)",
+        "II. Paul sealed the reconciliation through partnership (vv. 17\u201325)"
+    ],
+    "rows": [
+        {
+            "id": "pg0",
+            "label": "Epistolary Structure",
+            "cells": [
+                "Opening: Salutation (vv. 1\u20133) & Thanksgiving/Prayer (vv. 4\u20137); Body: Appeal of Love & Brotherhood (vv. 8\u201316)",
+                "Body: Partnership Pledge (vv. 17\u201320), Confidence (v. 21), Guest Room (v. 22) & Closing Greetings/Grace (vv. 23\u201325)"
+            ]
+        },
+        {
+            "id": "pg1",
+            "label": "Involved party",
+            "cells": [
+                "Paul (\u201cprisoner\u201d), Timothy, Philemon, Apphia, Archippus, House Church & Onesimus (\u201cchild\u201d)",
+                "Paul (\u201cpartner\u201d), Philemon (\u201cbrother\u201d), Onesimus & 5 Fellow Workers (Mark, Luke, etc.)"
+            ]
+        },
+        {
+            "id": "pg2",
+            "label": "Biblical Leadership Principle",
+            "cells": [
+                "Humble identification (laying aside rank) + Affirmation before asking + Appealing in love over command + Seeking voluntary consent",
+                "Sacrificial cost-bearing (promissory note) + Inspiring exceeding obedience + Personal pastoral accountability + Corporate grace"
+            ]
+        },
+        {
+            "id": "pg3",
+            "label": "1st-C. Slavery vs. Gospel",
+            "cells": [
+                "Earthly master & runaway slave \u2192 Beloved brother in the flesh and in the Lord (vv. 11, 16)",
+                "Legal retribution & liabilities \u2192 Imputed to Paul\u2019s account; community transformed under grace"
+            ]
+        },
+        {
+            "id": "pg4",
+            "label": "Setting / Atmosphere",
+            "cells": [
+                "Roman prison to Colossian house church (warm, prayerful, vulnerable, urgent)",
+                "Signed pledge in Paul\u2019s hand \u2192 Lodging prepared in prayer \u2192 Apostolic circle united in grace"
+            ]
+        }
     ]
-  },
-  simpleOutline: `The appeal of Paul’s Christlike leadership urged Philemon to receive his converted runaway slave Onesimus no longer as a slave, but as a beloved brother in Christ, securing gospel reconciliation through sacrificial love and personal accountability (Phlm 1–25).
-
-I. Paul appealed for Onesimus’s reception in love (1–16)
-   A. Preparing Philemon’s heart (1–7)
-      1. Prisoner’s warm greeting (1–3)
-      2. Thanksgiving for love (4–7)
-   B. Interceding for Onesimus (8–16)
-      1. Appeal of love (8–9)
-      2. Receiving a brother (10–16)
-
-II. Paul sealed the reconciliation through partnership (17–25)
-   A. Assuming debt and confidence (17–21)
-      1. Pledging debt repayment (17–20)
-      2. Confidence in obedience (21)
-   B. Expecting visit and fellowship (22–25)
-      1. Guest room request (22)
-      2. Final greetings and grace (23–25)`,
+},
+  simpleOutline: "The appeal of Paul\u2019s Christlike leadership urged Philemon to receive his converted runaway slave Onesimus no longer as a slave, but as a beloved brother in Christ, securing gospel reconciliation through sacrificial love and personal accountability (Phlm 1\u201325).\n\nI. Paul appealed for Onesimus\u2019s reception in love (1\u201316)\n   A. Preparing Philemon\u2019s heart (1\u20137)\n      1. Prisoner\u2019s warm greeting (1\u20133)\n      2. Thanksgiving for love (4\u20137)\n   B. Interceding for Onesimus (8\u201316)\n      1. Interceding for Onesimus (8\u201316)\n\nII. Paul sealed the reconciliation through partnership (17\u201325)\n   A. Assuming debt and confidence (17\u201321)\n      1. Pledging debt repayment (17\u201320)\n      2. Confidence in obedience (21)\n   B. Expecting visit and fellowship (22\u201325)\n      1. Guest room request (22)\n      2. Final greetings and grace (23\u201325)",
   sentenceOutline: [
-    "The appeal of Paul’s Christlike leadership urged Philemon to receive his converted runaway slave Onesimus no longer as a slave, but as a beloved brother in Christ, securing gospel reconciliation through sacrificial love and personal accountability (Phlm 1–25).",
-    "I. Paul appealed for the restoration of Onesimus by preparing Philemon’s heart and urging him to welcome the converted runaway as a beloved spiritual brother in Christ (1–16).",
-    "A. Paul prepared Philemon’s heart through warm fellowship, prayers of thanksgiving, and affirmation of his proven love for all the saints (1–7).",
-    "1. Paul warmly greeted Philemon, Apphia, Archippus, and the house church from his imprisonment, imparting divine grace and peace (1–3).",
-    "2. Paul thanked God for Philemon’s faith and love, affirming his proven record of refreshing the hearts of the saints as the moral basis for his request (4–7).",
-    "B. Paul interceded on behalf of converted Onesimus, appealing on the basis of love rather than apostolic command and redefining the slave as a beloved brother (8–16).",
-    "1. Paul chose to appeal on the basis of love rather than commanding what was required, honoring Philemon’s personal agency and voluntary obedience (8–9).",
-    "2. Paul urged Philemon to receive his spiritual child Onesimus back no longer merely as an enslaved servant, but as an eternal, beloved brother in the Lord (10–16).",
-    "II. Paul sealed the reconciliation between master and slave by personally assuming Onesimus’s liabilities, expressing pastoral confidence, and establishing mutual accountability (17–25).",
-    "A. Paul guaranteed full financial restitution for any wrong committed by Onesimus and voiced confident expectation that Philemon would exceed his request (17–21).",
-    "1. Paul personally pledged in his own handwriting to repay any debt or loss incurred by Onesimus, absorbing the liability to restore fellowship (17–20).",
-    "2. Paul expressed confident expectation in Philemon’s willing obedience, anticipating that he would do even more than requested in releasing Onesimus for ministry (21).",
-    "B. Paul requested personal lodging in expectation of release through prayer and closed with warm greetings from his fellow laborers and a benediction of grace (22–25).",
-    "1. Paul instructed Philemon to prepare a guest room in hopeful expectation that he would soon be granted to them through their corporate prayers (22).",
-    "2. Paul conveyed greetings from five fellow laborers and closed with a corporate benediction anchoring the church in the sovereign grace of the Lord Jesus Christ (23–25)."
-  ],
-  argumentText: `The appeal of Paul’s Christlike leadership urged Philemon to receive his converted runaway slave Onesimus no longer as a slave, but as a beloved brother in Christ, securing gospel reconciliation through sacrificial love and personal accountability (Phlm 1–25).
-
-I. Paul appealed for the restoration of Onesimus by preparing Philemon’s heart and urging him to welcome the converted runaway as a beloved spiritual brother in Christ (1–16).
-
-A. Paul prepared Philemon’s heart through warm fellowship, prayers of thanksgiving, and affirmation of his proven love for all the saints (1–7).
-
-1. Paul warmly greeted Philemon, Apphia, Archippus, and the house church from his imprisonment, imparting divine grace and peace (1–3).
-Paul began his epistle not by asserting his apostolic rank or commanding immediate compliance, but by identifying himself as “a prisoner of Christ Jesus” (desmios Christou Iēsou, Phlm 1). Under Roman imperial custody, Paul was a chained convict awaiting Caesar’s judgment; yet under the sovereignty of the gospel, he viewed his chains not as a social disgrace, but as an emblem of his service to Christ. This deliberate choice of self-designation immediately established a posture of shared humility. Rather than speaking from an elevated pedestal of apostolic authority, Paul placed himself alongside Philemon, addressing him affectionately as “our beloved brother and fellow worker” (synergos, Phlm 1). Furthermore, by explicitly including Apphia (“our sister”), Archippus (“our fellow soldier”), and “the church in your house” (Phlm 2), Paul brought what Roman legal culture treated as an exclusively private domestic dispute into the sphere of corporate Christian accountability. In Roman society, the master held absolute legal dominion (dominica potestas) over the household, possessing unchecked authority to punish or execute an enslaved person. By greeting the entire local assembly, Paul placed Philemon’s impending decision within the supportive, witnessing fellowship of the church. He concluded his greeting with an apostolic blessing: “Grace to you and peace from God our Father and the Lord Jesus Christ” (Phlm 3), establishing divine grace rather than Roman law as the governing atmosphere of the letter.
-
-2. Paul thanked God for Philemon’s faith and love, affirming his proven record of refreshing the hearts of the saints as the moral basis for his request (4–7).
-Paul offered continuous prayers of thanksgiving for Philemon’s faith toward the Lord Jesus and his love for all the saints (Phlm 4–5). He prayed that “the fellowship of your faith may become effective through the knowledge of every good thing which is in you for Christ’s sake” (koinōnia tēs pisteōs sou, Phlm 6). Philemon had earned a reputation as a generous Christian patron whose hospitality continually strengthened the believers: “For I have had great joy and comfort in your love, because the hearts of the saints have been refreshed through you, brother” (Phlm 7). The Greek term for “hearts” (splagchna) refers to one’s deepest seat of compassion and affection. By commending Philemon for having refreshed (anapepautai) the splagchna of God’s people, Paul affirmed his friend’s established character. When Paul subsequently asked Philemon to receive Onesimus, he did not demand an alien virtue; he invited Philemon to act consistently with the generous love he had already displayed toward all the saints.
-
-B. Paul interceded on behalf of converted Onesimus, appealing on the basis of love rather than apostolic command and redefining the slave as a beloved brother (8–16).
-
-1. Paul chose to appeal on the basis of love rather than commanding what was required, honoring Philemon’s personal agency and voluntary obedience (8–9).
-Although Paul possessed full apostolic authority in Christ to “order” (epitassein) Philemon to do what was proper, he intentionally renounced authoritarian command in favor of relational persuasion: “Therefore, though I have enough confidence in Christ to order you to do what is proper, yet for love’s sake I rather appeal to you—since I am such a person as Paul, the aged, and now also a prisoner of Christ Jesus” (Phlm 8–9). Here Paul demonstrated a foundational principle of biblical leadership: genuine spiritual leadership values voluntary, love-motivated obedience far above forced compliance. Authoritarian leaders demand external conformity through decrees and institutional coercion; biblical leaders appeal to the regenerated heart, honoring the follower’s personal dignity and moral agency. Describing himself as “the aged” (presbytēs)—an elder whose years of missionary hardship and present chains carried immense moral weight—Paul wielded his authority with gentleness. By appealing “for love’s sake” (dia tēn agapēn), he ensured that Philemon’s response would be an act of genuine Christian virtue rather than grudging submission (Phlm 14).
-
-2. Paul urged Philemon to receive his spiritual child Onesimus back no longer merely as an enslaved servant, but as an eternal, beloved brother in the Lord (10–16).
-Paul unveiled the specific subject of his appeal: “I appeal to you for my child Onesimus, whom I have fathered in my imprisonment” (Phlm 10). In the ancient world, the name Onesimus was a common slave name meaning “useful” or “profitable.” Paul utilized a vivid wordplay on his name: “who formerly was useless to you, but now is useful both to you and to me” (Phlm 11). As an unconverted runaway, Onesimus had lived down to the ancient stereotype of an untrustworthy servant (achrēstos); but through his conversion to Christ under Paul’s ministry, he had become genuinely useful (euchrēstos). Paul sent Onesimus back in person, describing the returning servant as “my very heart” (ta ema splagchna, Phlm 12)—using the exact term previously applied to the saints whom Philemon refreshed in verse 7. Although Paul desired to retain Onesimus in Rome so that the young convert might minister to him during his imprisonment (Phlm 13), he refused to act unilaterally: “but without your consent I did not want to do anything, so that your goodness would not be, in effect, by compulsion, but of your own free will” (Phlm 14). Paul then framed the crisis through the lens of divine providence: “For perhaps he was for this reason separated from you for a while, that you would have him back forever, no longer as a slave, but more than a slave, a beloved brother, especially to me, but how much more to you, both in the flesh and in the Lord!” (Phlm 15–16). In Roman law, Onesimus was merely a fugitive piece of property subject to punishment. But Paul elevated the entire relationship into the kingdom of God. Onesimus’s temporary departure had been redirected by God so that Philemon might receive him back as an eternal spiritual brother, redefining Roman social hierarchy into Christian brotherhood.
-
-II. Paul sealed the reconciliation between master and slave by personally assuming Onesimus’s liabilities, expressing pastoral confidence, and establishing mutual accountability (17–25).
-
-A. Paul guaranteed full financial restitution for any wrong committed by Onesimus and voiced confident expectation that Philemon would exceed his request (17–21).
-
-1. Paul personally pledged in his own handwriting to repay any debt or loss incurred by Onesimus, absorbing the liability to restore fellowship (17–20).
-Paul grounded his plea for Onesimus in his personal partnership with Philemon: “If then you regard me as a partner, accept him as you would me” (Phlm 17). The term partner (koinōnon) was used in ancient legal and commercial arrangements to designate partners sharing mutual rights and liabilities. Paul asked Philemon to transfer the honor and welcome due to an apostle directly onto the returning slave. To remove any economic obstacle arising from stolen property or lost labor, Paul wrote a formal promissory note: “And if he has wronged you in any way or owes you anything, charge that to my account; I, Paul, am writing this with my own hand, I will repay it” (Phlm 18–19a). In antiquity, executing a debt agreement (cheirographon) in one’s own handwriting created an legally binding obligation. Paul stepped between master and slave, personally absorbing the financial cost of reconciliation. Yet he gently reminded Philemon of a deeper reality: “(not to mention to you that you owe to me even your own self as well)” (Phlm 19b). Philemon had received the gospel and eternal life through Paul’s ministry; any monetary debt Onesimus owed Philemon was minuscule compared to the spiritual debt Philemon owed Paul. Paul concluded: “Yes, brother, let me benefit from you in the Lord; refresh my heart in Christ” (Phlm 20), asking Philemon to refresh Paul’s splagchna by forgiving Onesimus.
-
-2. Paul expressed confident expectation in Philemon’s willing obedience, anticipating that he would do even more than requested in releasing Onesimus for ministry (21).
-Paul voiced confident assurance in Philemon’s spiritual maturity: “Having confidence in your obedience, I write to you, since I know that you will do even more than what I say” (Phlm 21). Biblical leaders motivate others through positive trust rather than suspicion. Paul’s declaration of confidence inspired Philemon to rise above baseline expectations. While Paul had explicitly requested that Philemon receive Onesimus as a beloved brother (v. 16) and partner (v. 17), his confidence that Philemon would “do even more than what I say” (hyper ha legō) pointed toward formal emancipation and releasing Onesimus for gospel ministry.
-
-B. Paul requested personal lodging in expectation of release through prayer and closed with warm greetings from his fellow laborers and a benediction of grace (22–25).
-
-1. Paul instructed Philemon to prepare a guest room in hopeful expectation that he would soon be granted to them through their corporate prayers (22).
-Paul added immediate personal accountability to his appeal by requesting lodging: “At the same time also prepare me a guest room, for I hope that through your prayers I will be gave back to you” (Phlm 22). In the Greco-Roman world, providing hospitality (xenian) was an essential duty. Paul’s anticipated visit meant that Philemon’s treatment of Onesimus would soon be evaluated in person. Loving pastoral accountability ensured that spiritual convictions were translated into tangible action.
-
-2. Paul conveyed greetings from five fellow laborers and closed with a corporate benediction anchoring the church in the sovereign grace of the Lord Jesus Christ (23–25).
-Paul conveyed greetings from Epaphras, his “fellow prisoner in Christ Jesus” (Phlm 23), and four fellow workers: Mark, Aristarchus, Demas, and Luke (Phlm 24). The mention of Mark is especially poignant. Years earlier, Mark had deserted Paul and Barnabas in Pamphylia (Acts 13:13), causing a sharp contention between the missionaries (Acts 15:37–39). Yet here Mark stood fully restored as Paul’s valued coworker in Rome. Mark served as a living example of restorative leadership. If Paul could restore a deserter like Mark, Philemon could forgive and restore a runaway like Onesimus. Paul closed his letter with a corporate benediction: “The grace of the Lord Jesus Christ be with your spirit” (Phlm 25). The plural pronoun “your spirit” (hymōn) created an inclusio with the opening greeting in verse 3, placing the entire letter and Philemon’s decision under the grace of Christ.`
+    "The appeal of Paul\u2019s Christlike leadership urged Philemon to receive his converted runaway slave Onesimus no longer as a slave, but as a beloved brother in Christ, securing gospel reconciliation through sacrificial love and personal accountability (Phlm 1\u201325).",
+    "I. Paul appealed to Philemon to receive Onesimus in love on the basis of gospel partnership and grace, rather than apostolic command, so that Philemon\u2019s goodness would be voluntary (1\u201316).",
+    "A. Paul prepared Philemon\u2019s heart through warm greeting and thanksgiving, affirming his proven record of refreshing the saints (1\u20137).",
+    "1. Paul warmly greeted Philemon, Apphia, Archippus, and the house church from his imprisonment, imparting divine grace and peace (1\u20133).",
+    "2. Paul thanked God for Philemon\u2019s faith and love, affirming his proven record of refreshing the hearts of the saints as the moral basis for his request (4\u20137).",
+    "B. Paul interceded on behalf of his spiritual child Onesimus, urging Philemon to welcome his converted runaway slave no longer as a slave, but as a beloved brother in Christ (8\u201316).",
+    "1. Paul chose to appeal on the basis of love rather than commanding compliance, urging Philemon to welcome his converted runaway slave Onesimus permanently as a beloved brother in the Lord (8\u201316).",
+    "II. Paul pledged personal restitution for Onesimus\u2019s debt, expressing complete confidence in Philemon\u2019s obedience and anticipating shared Christian fellowship (17\u201325).",
+    "A. Paul assumed legal debt liability and expressed confidence in Philemon\u2019s willing obedience beyond what was asked (17\u201321).",
+    "1. Paul guaranteed full financial restitution for any wrong committed by Onesimus, writing with his own hand to assume the debt (17\u201320).",
+    "2. Paul voiced complete confidence in Philemon\u2019s obedience, knowing he would do even more than was requested (21).",
+    "B. Paul requested lodging in anticipation of prayer answered and conveyed personal greetings from faithful ministry coworkers (22\u201325).",
+    "1. Paul instructed Philemon to prepare a guest room in hopeful expectation that he would soon be restored to them through their prayers (22).",
+    "2. Paul conveyed greetings from five fellow laborers and closed with a corporate benediction of Christ\u2019s grace upon their spirit (23\u201325)."
+],
+  argumentText: "The appeal of Paul\u2019s Christlike leadership urged Philemon to receive his converted runaway slave Onesimus no longer as a slave, but as a beloved brother in Christ, securing gospel reconciliation through sacrificial love and personal accountability (Phlm 1\u201325).\n\nI. Paul appealed to Philemon to receive Onesimus in love on the basis of gospel partnership and grace, rather than apostolic command, so that Philemon\u2019s goodness would be voluntary (1\u201316).\n\nA. Paul prepared Philemon\u2019s heart through warm greeting and thanksgiving, affirming his proven record of refreshing the saints (1\u20137).\n\n1. Paul warmly greeted Philemon, Apphia, Archippus, and the house church from his imprisonment, imparting divine grace and peace (1\u20133).\nPaul began his epistle not by asserting his apostolic rank or commanding immediate compliance, but by identifying himself as \u201ca prisoner of Christ Jesus\u201d (desmios Christou I\u0113sou, Phlm 1). Under Roman imperial custody, Paul was a chained convict awaiting Caesar\u2019s judgment; yet under the sovereignty of the gospel, he viewed his chains not as a social disgrace, but as an emblem of his service to Christ. This deliberate choice of self-designation immediately established a posture of shared humility. Rather than speaking from an elevated pedestal of apostolic authority, Paul placed himself alongside Philemon, addressing him affectionately as \u201cour beloved brother and fellow worker\u201d (synergos, Phlm 1). Furthermore, by explicitly including Apphia (\u201cour sister\u201d), Archippus (\u201cour fellow soldier\u201d), and \u201cthe church in your house\u201d (Phlm 2), Paul brought what Roman legal culture treated as an exclusively private domestic dispute into the sphere of corporate Christian accountability. In Roman society, the master held absolute legal dominion (dominica potestas) over the household, possessing unchecked authority to punish or execute an enslaved person. By greeting the entire local assembly, Paul placed Philemon\u2019s impending decision within the supportive, witnessing fellowship of the church. He concluded his greeting with an apostolic blessing: \u201cGrace to you and peace from God our Father and the Lord Jesus Christ\u201d (Phlm 3), establishing divine grace rather than Roman law as the governing atmosphere of the letter.\n\n2. Paul thanked God for Philemon\u2019s faith and love, affirming his proven record of refreshing the hearts of the saints as the moral basis for his request (4\u20137).\nBefore introducing his difficult request concerning Onesimus, Paul bathed his appeal in genuine thanksgiving and prayer: \u201cI thank my God always, making mention of you in my prayers, because I hear of your love and of the faith which you have toward the Lord Jesus and toward all the saints\u201d (Phlm 4\u20135). Paul celebrated Philemon\u2019s vertical faith in Christ and horizontal love toward the Christian community, praying that \u201cthe fellowship of your faith may become effective through the knowledge of every good thing which is in you for Christ\u2019s sake\u201d (koin\u014dnia t\u0113s piste\u014ds sou, Phlm 6). Philemon had earned a reputation as a generous Christian patron whose hospitality continually strengthened the believers: \u201cFor I have had great joy and comfort in your love, because the hearts of the saints have been refreshed through you, brother\u201d (Phlm 7). The Greek term for \u201chearts\u201d (splagchna) refers to one\u2019s deepest seat of compassion and affection. By commending Philemon for having refreshed (anapepautai) the splagchna of God\u2019s people, Paul affirmed his friend\u2019s established character. When Paul subsequently asked Philemon to receive Onesimus, he did not demand an alien virtue; he invited Philemon to act consistently with the generous love he had already displayed toward all the saints.\n\nB. Paul interceded on behalf of his spiritual child Onesimus, urging Philemon to welcome his converted runaway slave no longer as a slave, but as a beloved brother in Christ (8\u201316).\n\n1. Paul chose to appeal on the basis of love rather than commanding compliance, urging Philemon to welcome his converted runaway slave Onesimus permanently as a beloved brother in the Lord (8\u201316).\nAlthough Paul possessed full apostolic authority in Christ to \u201corder\u201d (epitassein) Philemon to do what was proper, he intentionally renounced authoritarian command in favor of relational persuasion: \u201cTherefore, though I have enough confidence in Christ to order you to do what is proper, yet for love\u2019s sake I rather appeal to you\u2014since I am such a person as Paul, the aged, and now also a prisoner of Christ Jesus\u201d (Phlm 8\u20139). Here Paul demonstrated a foundational principle of biblical leadership: genuine spiritual leadership values voluntary, love-motivated obedience far above forced compliance. Authoritarian leaders demand external conformity through decrees and institutional coercion; biblical leaders appeal to the regenerated heart, honoring the follower\u2019s personal dignity and moral agency. Describing himself as \u201cthe aged\u201d (presbyt\u0113s)\u2014an elder whose years of missionary hardship and present chains carried immense moral weight\u2014Paul wielded his authority with gentleness. By appealing \u201cfor love\u2019s sake\u201d (dia t\u0113n agap\u0113n), he ensured that Philemon\u2019s response would be an act of genuine Christian virtue rather than grudging submission (Phlm 14). Paul then unveiled the specific subject of his appeal: \u201cI appeal to you for my child Onesimus, whom I have fathered in my imprisonment\u201d (Phlm 10). In the ancient world, the name Onesimus was a common slave name meaning \u201cuseful\u201d or \u201cprofitable.\u201d Paul utilized a vivid wordplay on his name: \u201cwho formerly was useless to you, but now is useful both to you and to me\u201d (Phlm 11). As an unconverted runaway, Onesimus had lived down to the ancient stereotype of an untrustworthy servant (achr\u0113stos); but through his conversion to Christ under Paul\u2019s ministry, he had become genuinely useful (euchr\u0113stos). Paul sent Onesimus back in person, describing the returning servant as \u201cmy very heart\u201d (ta ema splagchna, Phlm 12)\u2014using the exact term previously applied to the saints whom Philemon refreshed in verse 7. Although Paul desired to retain Onesimus in Rome so that the young convert might minister to him during his imprisonment (Phlm 13), he refused to act unilaterally: \u201cbut without your consent I did not want to do anything, so that your goodness would not be, in effect, by compulsion, but of your own free will\u201d (Phlm 14). Paul then framed the crisis through the lens of divine providence: \u201cFor perhaps he was for this reason separated from you for a while, that you would have him back forever, no longer as a slave, but more than a slave, a beloved brother, especially to me, but how much more to you, both in the flesh and in the Lord!\u201d (Phlm 15\u201316). In Roman law, Onesimus was merely a fugitive piece of property subject to punishment. But Paul elevated the entire relationship into the kingdom of God. Onesimus\u2019s temporary departure had been redirected by God so that Philemon might receive him back as an eternal spiritual brother, redefining Roman social hierarchy into Christian brotherhood.\n\nII. Paul pledged personal restitution for Onesimus\u2019s debt, expressing complete confidence in Philemon\u2019s obedience and anticipating shared Christian fellowship (17\u201325).\n\nA. Paul assumed legal debt liability and expressed confidence in Philemon\u2019s willing obedience beyond what was asked (17\u201321).\n\n1. Paul guaranteed full financial restitution for any wrong committed by Onesimus, writing with his own hand to assume the debt (17\u201320).\nPaul moved from general relational appeals to specific legal and financial substitution: \u201cIf then you regard me as a partner, accept him as you would me\u201d (Phlm 17). The word \u201cpartner\u201d (koin\u014dnos) established a legal and theological solidarity between Paul and Philemon. Paul asked Philemon to transfer the love, honor, and welcome due to an apostle directly onto the returning slave. To resolve the material barrier between them, Paul assumed full legal liability: \u201cBut if he has wronged you in any way or owes you anything, charge that to my account; I, Paul, am writing this with my own hand, I will repay it\u201d (Phlm 18\u201319a). Under Roman law, a master had the right to demand compensation for damages or stolen goods incurred by a runaway slave. By penning a formal promissory note (cheirographon) with his own hand, Paul legally obligated himself to pay Onesimus\u2019s debt. In doing so, Paul mirrored the substitutionary work of Christ, who absorbed humanity\u2019s sin debt to reconcile believers to the Father. Paul then gently reminded Philemon of his immense spiritual debt: \u201cnot to mention to you that you owe to me even your own self as well\u201d (Phlm 19b). Philemon owed his very eternal salvation to Paul\u2019s gospel ministry. On the basis of this shared grace, Paul made a passionate, fraternal plea: \u201cYes, brother, let me benefit from you in the Lord; refresh my heart in Christ\u201d (Phlm 20). Paul asked Philemon to refresh his splagchna by forgiving Onesimus, echoing how Philemon had refreshed the saints in verse 7.\n\n2. Paul voiced complete confidence in Philemon\u2019s obedience, knowing he would do even more than was requested (21).\nPaul sealed his appeal not with threats of ecclesiastical sanction, but with empowering pastoral confidence: \u201cHaving confidence in your obedience, I write to you, since I know that you will do even more than what I say\u201d (Phlm 21). Effective spiritual leaders motivate others through trust rather than suspicion. By expressing firm conviction that Philemon would exceed the explicit request, Paul gently challenged him to go beyond mere forgiveness. Scholars widely recognize that \u201cdoing more than what I say\u201d pointed toward granting Onesimus his legal freedom (manumissio) and releasing him to return to Rome as Paul\u2019s gospel coworker. Paul inspired Philemon to rise above the minimum legal requirement of Roman society and embrace the radical generosity of gospel grace.\n\nB. Paul requested lodging in anticipation of prayer answered and conveyed personal greetings from faithful ministry coworkers (22\u201325).\n\n1. Paul instructed Philemon to prepare a guest room in hopeful expectation that he would soon be restored to them through their prayers (22).\nPaul added immediate personal accountability to his appeal by requesting lodging: \u201cAt the same time also prepare me a guest room, for I hope that through your prayers I will be given to you\u201d (Phlm 22). This practical request was a brilliant stroke of pastoral wisdom. Philemon could not treat Paul\u2019s letter as a distant, theoretical essay; Paul anticipated visiting Colossae in person in the near future. When Paul arrived, he would see firsthand how Philemon had treated Onesimus. Accountability transformed an abstract theological appeal into an urgent, practical reality. Furthermore, by linking his release to \u201cyour prayers,\u201d Paul affirmed the efficacy of corporate intercession and reinforced the reciprocal partnership between apostle and local church.\n\n2. Paul conveyed greetings from five fellow laborers and closed with a corporate benediction of Christ\u2019s grace upon their spirit (23\u201325).\nPaul concluded by conveying greetings from his missionary circle in Rome: \u201cEpaphras, my fellow prisoner in Christ Jesus, greets you, as do Mark, Aristarchus, Demas, Luke, my fellow workers\u201d (Phlm 23\u201324). These coworkers\u2014representing diverse backgrounds and including both former deserters like Mark and faithful physicians like Luke\u2014stood as corporate witnesses to Paul\u2019s appeal. Philemon\u2019s response would be witnessed not only by his local house church, but by the wider apostolic network. Paul brought the letter to a close with an apostolic benediction: \u201cThe grace of the Lord Jesus Christ be with your spirit\u201d (Phlm 25). The pronoun \u201cyour\u201d (hym\u014dn) is plural, extending Christ\u2019s enabling grace to the entire Colossian assembly. By beginning and ending with grace (Phlm 3, 25), Paul reminded Philemon that only supernatural divine grace could empower a Roman master to surrender his legal rights and embrace a runaway slave as a beloved brother in Christ."
 });
 
 const createDefaultMarkArgument = () => ({
