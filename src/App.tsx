@@ -327,139 +327,139 @@ const createDefaultPhilemonArgument = () => ({
         "id": "p1",
         "segment": "1\u20133",
         "title": "Prisoner\u2019s warm greeting",
-        "groupHeader": "Paul appealed for Onesimus\u2019s reception in love",
+        "groupHeader": "Paul appeals for Onesimus in love",
         "subGroupHeader": "Preparing Philemon\u2019s heart",
-        "actor": "Paul, Timothy & Philemon\u2019s church",
-        "grade": "Humble identity: \u201cprisoner\u201d of Christ (v. 1)",
-        "genre": "Epistolary Opening: Greeting (1\u20133)",
-        "godAction": "Master & slave \u2192 Co-workers in Christ",
-        "setting": "Roman prison \u2192 Colossian house church",
-        "relations": "Contrast: Rather than claiming apostolic authority, Paul identifies as \"a prisoner of Christ Jesus\" (v. 1), addressing Philemon and the house church."
+        "actor": "Paul & house church",
+        "grade": "Relational humility over rank",
+        "genre": "Epistolary salutation",
+        "godAction": "Chains of Caesar \u2192 Prisoner of Jesus",
+        "setting": "Roman prison \u2192 Colossae",
+        "relations": "Contrast: Paul introduces himself as a humble prisoner rather than an apostle commanding obedience."
     },
     {
         "id": "p2",
         "segment": "4\u20137",
         "title": "Thanksgiving for love",
-        "groupHeader": "Paul appealed for Onesimus\u2019s reception in love",
+        "groupHeader": "Paul appeals for Onesimus in love",
         "subGroupHeader": "Preparing Philemon\u2019s heart",
-        "actor": "Paul & Philemon (with all saints)",
-        "grade": "Affirming & praying before appealing (vv. 4\u20137)",
-        "genre": "Thanksgiving & Intercession (4\u20137)",
-        "godAction": "Rejoicing in fruit of love among saints",
-        "setting": "Personal prayer of Apostle in chains",
-        "relations": "Causation: Philemon\u2019s proven record of refreshing the hearts of the saints (splagchna, v. 7) provides the moral basis for Paul\u2019s appeal."
+        "actor": "Paul & Philemon",
+        "grade": "Affirmation before request",
+        "genre": "Thanksgiving & prayer",
+        "godAction": "Master\u2019s power \u2192 Hearts refreshed in love",
+        "setting": "Solitary prayer in chains",
+        "relations": "Causation: Philemon\u2019s proven record of refreshing the saints provides the moral basis for Paul\u2019s appeal."
     },
     {
         "id": "p3",
         "segment": "8\u201316",
-        "title": "Interceding for Onesimus",
-        "groupHeader": "Paul appealed for Onesimus\u2019s reception in love",
+        "title": "Plea for Onesimus",
+        "groupHeader": "Paul appeals for Onesimus in love",
         "subGroupHeader": "Interceding for Onesimus",
         "actor": "Paul, Onesimus & Philemon",
-        "grade": "Persuasion over compulsion & brotherhood (vv. 9, 16)",
-        "genre": "Apostolic Plea & Adoption into Brotherhood (8\u201316)",
-        "godAction": "Transforming fugitive slave into beloved brother",
-        "setting": "Roman chains \u2192 Sovereign divine providence",
-        "relations": "Contrast & Climax: Paul renounces command to appeal in agape (vv. 8\u20139); Onesimus was separated briefly to be restored forever as a beloved brother (vv. 15\u201316)."
+        "grade": "Appeals in love over command",
+        "genre": "Apostolic plea & intercession",
+        "godAction": "Runaway slave \u2192 Beloved brother forever!",
+        "setting": "Rome (new birth) \u2192 Colossae",
+        "relations": "Climax: Onesimus was separated temporarily to be received back forever as a beloved brother in Christ."
     },
     {
         "id": "p4",
         "segment": "17\u201320",
-        "title": "Pledging debt repayment",
-        "groupHeader": "Paul sealed the reconciliation through partnership",
-        "subGroupHeader": "Assuming debt and confidence",
-        "actor": "Paul & Philemon (for Onesimus)",
-        "grade": "Sacrificial substitution: \u201ccharge that to my account\u201d (v. 18)",
-        "genre": "Legal Promissory Note / Guarantee (17\u201320)",
-        "godAction": "Paul acts as surety, modeling Christ\u2019s cross",
-        "setting": "Formal handwriting: \u201cI, Paul, write this\u201d (v. 19)",
-        "relations": "Substantiation: Paul links his appeal to partnership (koin\u014dnon, v. 17), pledging his own hand to repay any wrong or debt incurred by Onesimus (v. 19)."
+        "title": "Pledge to repay debt",
+        "groupHeader": "Paul pledges restitution and partnership",
+        "subGroupHeader": "Assuming debt & confidence",
+        "actor": "Paul & Philemon",
+        "grade": "Sacrificial substitution",
+        "genre": "Promissory note (debt guarantee)",
+        "godAction": "Master\u2019s claim \u2192 Imputed to Paul\u2019s account!",
+        "setting": "Written note \u2192 Household ledger",
+        "relations": "Substantiation: Paul anchors reconciliation in partnership and personally assumes Onesimus\u2019s financial debts."
     },
     {
         "id": "p5",
         "segment": "21",
         "title": "Confidence in obedience",
-        "groupHeader": "Paul sealed the reconciliation through partnership",
-        "subGroupHeader": "Assuming debt and confidence",
+        "groupHeader": "Paul pledges restitution and partnership",
+        "subGroupHeader": "Assuming debt & confidence",
         "actor": "Paul & Philemon",
-        "grade": "High-trust leadership: \u201cdo even more than I say\u201d (v. 21)",
-        "genre": "Pastoral Affirmation & Trust (21)",
-        "godAction": "Inspiring voluntary obedience exceeding command",
-        "setting": "Absolute confidence in Philemon\u2019s love",
-        "relations": "Progression: Paul expresses absolute confidence that Philemon will do even more than what is asked (hyper ha leg\u014d, v. 21)."
+        "grade": "Empowering trust",
+        "genre": "Pastoral confidence",
+        "godAction": "Legal subjugation \u2192 Voluntary generosity",
+        "setting": "Spiritual bond: Rome to Colossae",
+        "relations": "Progression: Paul expresses high trust, confident Philemon will do even more than requested."
     },
     {
         "id": "p6",
         "segment": "22",
         "title": "Guest room request",
-        "groupHeader": "Paul sealed the reconciliation through partnership",
-        "subGroupHeader": "Expecting visit and fellowship",
+        "groupHeader": "Paul pledges restitution and partnership",
+        "subGroupHeader": "Expecting visit & fellowship",
         "actor": "Paul & Philemon",
-        "grade": "Pastoral accountability: preparing a guest room (v. 22)",
-        "genre": "Personal Request & Anticipated Visit (22)",
-        "godAction": "Expectation of release through church\u2019s prayers",
-        "setting": "Colossian hospitality anticipating arrival",
-        "relations": "Accountability: Requesting a guest room reminds Philemon that Paul expects to see the fruit of reconciliation in person through their prayers (v. 22)."
+        "grade": "Pastoral accountability",
+        "genre": "Personal request for lodging",
+        "godAction": "Private household \u2192 Public accountability",
+        "setting": "Guest room in Colossian home",
+        "relations": "Preparation: Requesting lodging establishes loving personal accountability for Philemon\u2019s decision."
     },
     {
         "id": "p7",
         "segment": "23\u201325",
         "title": "Final greetings and grace",
-        "groupHeader": "Paul sealed the reconciliation through partnership",
-        "subGroupHeader": "Expecting visit and fellowship",
-        "actor": "Paul, Coworkers (Mark, Luke) & Church",
-        "grade": "Restored ministry team & corporate grace (vv. 23\u201325)",
-        "genre": "Epistolary Closing: Greetings & Benediction (23\u201325)",
-        "godAction": "Uniting saints in Christ across social barriers",
-        "setting": "Fellow workers in Rome sending greetings to Colossae",
-        "relations": "Inclusio: Epaphras, Mark (restored deserter), Aristarchus, Demas, and Luke join Paul, closing with grace to \u201cyour spirit\u201d (plural, v. 25)."
+        "groupHeader": "Paul pledges restitution and partnership",
+        "subGroupHeader": "Expecting visit & fellowship",
+        "actor": "Coworkers & Church",
+        "grade": "Collaborative teamwork",
+        "genre": "Closing greetings & grace",
+        "godAction": "Social hierarchy \u2192 Gospel brotherhood",
+        "setting": "Roman prison circle \u2192 Colossian assembly",
+        "relations": "Inclusio: Epaphras, Mark, Luke, and coworkers close with Christ\u2019s grace upon the whole congregation."
     }
 ],
   gridChart: {
     "headers": [
-        "Topics",
-        "I. Paul appealed for Onesimus\u2019s reception in love (vv. 1\u201316)",
-        "II. Paul sealed the reconciliation through partnership (vv. 17\u201325)"
+        "Comparative Aspect",
+        "Division I: Paul\u2019s Appeal in Love (vv. 1\u201316)",
+        "Division II: Paul\u2019s Restitution & Partnership (vv. 17\u201325)"
     ],
     "rows": [
         {
             "id": "pg0",
             "label": "Epistolary Structure",
             "cells": [
-                "Opening: Salutation (vv. 1\u20133) & Thanksgiving/Prayer (vv. 4\u20137); Body: Appeal of Love & Brotherhood (vv. 8\u201316)",
-                "Body: Partnership Pledge (vv. 17\u201320), Confidence (v. 21), Guest Room (v. 22) & Closing Greetings/Grace (vv. 23\u201325)"
+                "Opening: Salutation (vv. 1\u20133) & Thanksgiving (vv. 4\u20137); Body: Plea for Onesimus (vv. 8\u201316)",
+                "Body: Debt Guarantee (vv. 17\u201320), Confidence (v. 21), Guest Room (v. 22) & Closing Grace (vv. 23\u201325)"
             ]
         },
         {
             "id": "pg1",
-            "label": "Involved party",
+            "label": "Involved Parties",
             "cells": [
                 "Paul (\u201cprisoner\u201d), Timothy, Philemon, Apphia, Archippus, House Church & Onesimus (\u201cchild\u201d)",
-                "Paul (\u201cpartner\u201d), Philemon (\u201cbrother\u201d), Onesimus & 5 Fellow Workers (Mark, Luke, etc.)"
+                "Paul (\u201cpartner\u201d & \u201cguarantor\u201d), Philemon (\u201cbrother\u201d), Onesimus & Coworkers (Mark, Luke, etc.)"
             ]
         },
         {
             "id": "pg2",
-            "label": "Biblical Leadership Principle",
+            "label": "Leadership Principle",
             "cells": [
-                "Humble identification (laying aside rank) + Affirmation before asking + Appealing in love over command + Seeking voluntary consent",
-                "Sacrificial cost-bearing (promissory note) + Inspiring exceeding obedience + Personal pastoral accountability + Corporate grace"
+                "Humble identification + Affirmation before asking + Appealing in love over command",
+                "Sacrificial cost-bearing + Inspiring exceeding obedience + Pastoral accountability"
             ]
         },
         {
             "id": "pg3",
-            "label": "1st-C. Slavery vs. Gospel",
+            "label": "Slavery vs. Gospel",
             "cells": [
-                "Earthly master & runaway slave \u2192 Beloved brother in the flesh and in the Lord (vv. 11, 16)",
-                "Legal retribution & liabilities \u2192 Imputed to Paul\u2019s account; community transformed under grace"
+                "Dominica potestas & runaway slave \u2192 Elevated to beloved brother forever (vv. 11, 16)",
+                "Legal debt retribution \u2192 Imputed to Paul\u2019s personal account; community transformed under grace"
             ]
         },
         {
             "id": "pg4",
-            "label": "Setting / Atmosphere",
+            "label": "Setting & Atmosphere",
             "cells": [
-                "Roman prison to Colossian house church (warm, prayerful, vulnerable, urgent)",
-                "Signed pledge in Paul\u2019s hand \u2192 Lodging prepared in prayer \u2192 Apostolic circle united in grace"
+                "Roman prison chains to Colossian house church (warm, prayerful, relational plea)",
+                "Signed promissory note in Paul\u2019s hand \u2192 Lodging prepared in prayer \u2192 Team united in grace"
             ]
         }
     ]
