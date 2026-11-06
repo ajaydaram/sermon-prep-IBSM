@@ -1,115 +1,323 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap');
-@import "tailwindcss";
+:root {
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
-
-  /* Force palette mapping to High Density Theme */
-  --color-slate-50: #E4E3E0;
-  --color-slate-100: #D4D3D0;
-  --color-slate-150: #141414;
-  --color-slate-200: #141414;
-  --color-slate-300: #141414;
-  --color-slate-400: #141414;
-  --color-slate-500: #141414;
-  --color-slate-600: #141414;
-  --color-slate-700: #141414;
-  --color-slate-800: #141414;
-  --color-slate-900: #0a0a0a;
-
-  --color-gray-50: #fcfbfa;
-  --color-gray-100: #D4D3D0;
-  --color-gray-150: #141414;
-  --color-gray-200: #141414;
-  --color-gray-300: #141414;
-  --color-gray-400: #141414;
-
-  /* Accents & category colors mapped to clean high contrast colors */
-  --color-emerald-50: #D4D3D0;
-  --color-emerald-100: #141414;
-  --color-emerald-200: #141414;
-  --color-emerald-700: #141414;
-  --color-emerald-800: #141414;
-  --color-emerald-950: #141414;
-
-  --color-sky-50: #D4D3D0;
-  --color-sky-100: #141414;
-  --color-sky-200: #141414;
-  --color-sky-800: #141414;
-  --color-sky-950: #141414;
-
-  --color-purple-50: #D4D3D0;
-  --color-purple-100: #141414;
-  --color-purple-200: #141414;
-  --color-purple-800: #141414;
-  --color-purple-950: #141414;
-
-  --color-amber-50: #D4D3D0;
-  --color-amber-100: #141414;
-  --color-amber-200: #141414;
-  --color-amber-800: #141414;
-  --color-amber-900: #141414;
-
-  --color-rose-50: #D4D3D0;
-  --color-rose-100: #141414;
-  --color-rose-200: #141414;
-  --color-rose-800: #141414;
-  --color-rose-950: #141414;
-
-  /* Border radius override to sharpen all elements */
-  --radius-xl: 0px;
-  --radius-lg: 0px;
-  --radius-md: 0px;
-  --radius-sm: 0px;
-
-  /* Flatten all default shadow styling */
-  --shadow-sm: none;
-  --shadow-md: none;
-  --shadow-lg: none;
-  --shadow-xl: none;
-  --shadow-2xs: none;
-  --shadow-xs: none;
+  /* Color Palette - Elegant Theological Forest & Gold Theme */
+  --color-bg-base: #060b09;
+  --color-bg-sidebar: #0a110e;
+  --color-bg-card: rgba(18, 28, 24, 0.75);
+  --color-bg-card-hover: rgba(26, 38, 33, 0.85);
+  
+  --color-primary: #1b3d30;
+  --color-primary-light: #285543;
+  --color-accent-gold: #d4af37;
+  --color-accent-gold-dark: #b89224;
+  --color-accent-emerald: #10b981;
+  --color-accent-emerald-light: #34d399;
+  
+  --color-text-primary: #e6ede9;
+  --color-text-secondary: #9cb0a5;
+  --color-text-muted: #677c72;
+  
+  --border-color: rgba(212, 175, 55, 0.15);
+  --border-color-focus: rgba(212, 175, 55, 0.4);
+  --border-radius-sm: 8px;
+  --border-radius-md: 14px;
+  --border-radius-lg: 20px;
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+  
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Custom globally applied elements for High Density aesthetic */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #E4E3E0;
-  color: #141414;
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(27, 61, 48, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.04) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+p {
+  color: var(--color-text-secondary);
+}
+
+/* Glassmorphism Classes */
+.glass-card {
+  background: var(--color-bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), border-color var(--transition-normal), background-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.glass-card:hover {
+  background: var(--color-bg-card-hover);
+  border-color: rgba(212, 175, 55, 0.25);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Dynamic Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: var(--border-radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
   font-family: var(--font-sans);
 }
 
-input, textarea, select {
-  background-color: #ffffff !important;
-  color: #141414 !important;
-  border: 1px solid #141414 !important;
-  border-radius: 0px !important;
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-accent-gold) 0%, var(--color-accent-gold-dark) 100%);
+  color: #060b09;
+  font-weight: 600;
 }
 
-input:focus, textarea:focus, select:focus {
-  outline: none !important;
-  box-shadow: 0 0 0 1px #141414 !important;
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+  filter: brightness(1.1);
 }
 
-button {
-  border-radius: 0px !important;
+.btn-secondary {
+  background: var(--color-primary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--border-color);
 }
 
-/* Scrollbar customizations for high density content */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+.btn-secondary:hover {
+  background: var(--color-primary-light);
+  border-color: rgba(212, 175, 55, 0.3);
 }
 
-::-webkit-scrollbar-track {
-  background: #E4E3E0;
+.btn-outline-gold {
+  background: transparent;
+  color: var(--color-accent-gold);
+  border: 1px solid var(--color-accent-gold);
 }
 
-::-webkit-scrollbar-thumb {
-  background: #141414;
+.btn-outline-gold:hover {
+  background: rgba(212, 175, 55, 0.1);
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #444444;
+/* Inputs & Form Elements */
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(6, 11, 9, 0.8);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
+
+.input-field:focus {
+  border-color: var(--border-color-focus);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent-gold);
+  margin-bottom: 0.5rem;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Progress Tracker Styling */
+.progress-ring {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-accent-gold) 0%, var(--color-accent-emerald) 100%);
+  border-radius: 4px;
+  transition: width var(--transition-slow);
+}
+
+/* Badge System */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-gold {
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--color-accent-gold);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.badge-green {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--color-accent-emerald-light);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.badge-red {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.badge-gray {
+  background: rgba(103, 124, 114, 0.15);
+  color: var(--color-text-secondary);
+  border: 1px solid rgba(103, 124, 114, 0.25);
+}
+
+/* Custom Table style for Charts */
+.custom-table-container {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  background: rgba(10, 17, 14, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.custom-table th {
+  background: rgba(27, 61, 48, 0.5);
+  font-family: var(--font-serif);
+  color: var(--color-accent-gold);
+  font-weight: 600;
+  padding: 1rem;
+  font-size: 1.05rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.custom-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  vertical-align: top;
+}
+
+.custom-table tr:last-child td {
+  border-bottom: none;
+}
+
+.custom-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--color-text-primary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn var(--transition-normal) forwards;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
