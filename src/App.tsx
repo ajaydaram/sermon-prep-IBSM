@@ -319,7 +319,7 @@ God questioned Jonah a second time, asking if he had good reason to be angry abo
 const createDefaultPhilemonArgument = () => ({
   bookChartTheme: "The appeal of Paul\u2019s Christlike leadership urged Philemon to receive his converted runaway slave Onesimus no longer as a slave, but as a beloved brother in Christ, securing gospel reconciliation through sacrificial love and personal accountability (Phlm 1\u201325).",
   bookNameLabel: "Philemon",
-  actorRowLabel: "Involved party",
+  actorRowLabel: "Topic: Paul’s Role",
   gradeRowLabel: "Leadership principle",
   introductoryMaterial: "Introduction\nThe Letter to Philemon is Paul\u2019s shortest, most intensely personal, and sociologically revolutionary prison epistle. Composed during his Roman custody, the epistle bridges the profound chasm between ancient Roman legal coercion and the radical brotherhood of the gospel of Jesus Christ. Through a delicate masterpiece of pastoral persuasion, Paul interceded on behalf of Onesimus\u2014a runaway slave who had fled his master Philemon, encountered Paul in chains, and experienced spiritual regeneration. Rather than commanding compliance through apostolic authority, Paul modeled Christlike leadership by appealing on the basis of sacrificial love, assuming financial liability, and establishing mutual accountability.\n\nAuthor\nThe Apostle Paul authored the epistle, identifying himself explicitly by name as \u201ca prisoner of Christ Jesus\u201d alongside his trusted coworker Timothy (Phlm 1, 9, 19). Paul affirmed his direct personal authorship and legal commitment by penning the formal promissory debt guarantee with his own hand (Phlm 19).\n\nDate of writing\nThe date of writing was approximately AD 60\u201362 during Paul\u2019s first Roman imprisonment under house arrest in his own rented quarters (Acts 28:16, 30\u201331). It was dispatched concurrently with the Epistle to the Colossians via Tychicus and the returning Onesimus (Col 4:7\u20139).\n\nHistorical Setting\nHistorically, the epistle was situated within the Pax Romana under the early reign of Emperor Nero (AD 54\u201368), where Roman slavery was an entrenched, legally coercive empire-wide institution maintained through warfare, natural reproduction, piracy, and economic destitution.[1] Under Roman law (dominica potestas), slaveholders possessed virtually unchecked legal dominion over enslaved persons, rendering a runaway slave (fugitivus) liable to severe corporal punishment, branding with the letters FUG upon the forehead, confinement in private workhouses (ergastula), or execution by crucifixion.[2] However, Roman custom also recognized the principle of amicus domini\u2014where an enslaved person who fled in fear of a master\u2019s wrath could seek refuge with a respected friend of the master to negotiate mediation and reconciliation without being classified as a criminal fugitive.[3] Even upon potential manumission, a freedperson (libertus) remained bound to their former master through continuing patronal duties of reverence (obsequium) and customary labor services (operae).[4] In the Lycus Valley city of Colossae, Philemon hosted a fledgling house church; the sudden return of his runaway slave Onesimus\u2014now converted to Christ through Paul\u2014confronted this congregation with a profound theological and social test of whether the gospel of grace could genuinely overturn Roman legal hierarchy in favor of Christian brotherhood.[5]\n\nPlace of Writing\nThe Epistle to Philemon was written in Rome while Paul was under military custody awaiting trial before Emperor Nero (Acts 28:16, 30\u201331; Phlm 1, 9, 10, 13, 23).\n\nRecipients\nThe letter was addressed primarily to Philemon, a wealthy Christian citizen and slaveholder in Colossae, together with Apphia (likely his wife), Archippus (a ministry coworker), and the entire local church gathering in Philemon\u2019s home (Phlm 1\u20132).\n\nOccasion and Purpose\nThe occasion was the return of the converted slave Onesimus to Colossae under the apostolic protection of Paul\u2019s letter. Paul\u2019s purpose was to appeal affectionately to Philemon to forgive and receive Onesimus no longer as a mere fugitive slave, but as a beloved brother in the Lord, charging any financial debt to Paul\u2019s personal account and preparing for Paul\u2019s prospective visit.[6]\n\nTheme\nThe appeal of Paul\u2019s Christlike leadership urged Philemon to receive his converted runaway slave Onesimus no longer as a slave, but as a beloved brother in Christ, securing gospel reconciliation through sacrificial love and personal accountability (Phlm 1\u201325).",
   bookChart: [
@@ -329,12 +329,12 @@ const createDefaultPhilemonArgument = () => ({
         "title": "Prisoner\u2019s warm greeting",
         "groupHeader": "Paul appeals for Onesimus in love",
         "subGroupHeader": "Preparing Philemon\u2019s heart",
-        "actor": "Paul & house church",
-        "grade": "Relational humility over rank",
+        "actor": "Humble prisoner",
+        "grade": "Humility over status",
         "genre": "Epistolary salutation",
-        "godAction": "Caesar\u2019s chains \u2192 Prisoner of Jesus",
-        "setting": "Roman prison \u2192 Colossian house church",
-        "relations": "Contrast: Paul introduces himself as a humble prisoner rather than commanding as an apostle."
+        "godAction": "Imperial chains \u2192 Christ\u2019s prisoner",
+        "setting": "Rome prison \u2192 House church",
+        "relations": "Paul identifies as a humble prisoner of Christ Jesus rather than commanding as an apostle."
     },
     {
         "id": "p2",
@@ -342,12 +342,12 @@ const createDefaultPhilemonArgument = () => ({
         "title": "Thanksgiving for love",
         "groupHeader": "Paul appeals for Onesimus in love",
         "subGroupHeader": "Preparing Philemon\u2019s heart",
-        "actor": "Paul & Philemon",
+        "actor": "Grateful friend",
         "grade": "Affirmation before request",
         "genre": "Thanksgiving & prayer",
-        "godAction": "Master\u2019s legal power \u2192 Hearts refreshed",
+        "godAction": "Master\u2019s power \u2192 Hearts refreshed",
         "setting": "Solitary prayer in chains",
-        "relations": "Causation: Philemon\u2019s proven record of refreshing the saints provides the moral ground for Paul\u2019s plea."
+        "relations": "Philemon\u2019s proven record of refreshing the saints provides the moral basis for Paul\u2019s plea."
     },
     {
         "id": "p3",
@@ -355,12 +355,12 @@ const createDefaultPhilemonArgument = () => ({
         "title": "Appeal of love",
         "groupHeader": "Paul appeals for Onesimus in love",
         "subGroupHeader": "Interceding for Onesimus",
-        "actor": "Paul & Philemon",
+        "actor": "Loving advocate",
         "grade": "Persuasion over compulsion",
-        "genre": "Apostolic plea (parakl\u0113sis)",
-        "godAction": "Enforced command \u2192 Voluntary love",
-        "setting": "Paul the aged in Roman custody",
-        "relations": "Contrast: Paul renounces apostolic command to appeal on the basis of agape love."
+        "genre": "Apostolic plea",
+        "godAction": "Enforced rule \u2192 Voluntary love",
+        "setting": "Aged apostle in custody",
+        "relations": "Paul waives apostolic command to appeal entirely on the basis of agape love."
     },
     {
         "id": "p4",
@@ -368,12 +368,12 @@ const createDefaultPhilemonArgument = () => ({
         "title": "Receiving a brother",
         "groupHeader": "Paul appeals for Onesimus in love",
         "subGroupHeader": "Interceding for Onesimus",
-        "actor": "Paul, Onesimus & Philemon",
+        "actor": "Spiritual father",
         "grade": "Restoring the marginalized",
-        "genre": "Intercession & adoption",
-        "godAction": "Runaway slave \u2192 Beloved brother forever!",
-        "setting": "Rome (new birth) \u2192 Colossae",
-        "relations": "Climax: Onesimus was separated temporarily to be restored forever as a beloved spiritual brother."
+        "genre": "Paternal intercession",
+        "godAction": "Runaway slave \u2192 Beloved brother!",
+        "setting": "Rome new birth \u2192 Return Colossae",
+        "relations": "Onesimus was separated temporarily so Philemon might receive him back forever as a beloved brother."
     },
     {
         "id": "p5",
@@ -381,12 +381,12 @@ const createDefaultPhilemonArgument = () => ({
         "title": "Pledge to repay debt",
         "groupHeader": "Paul pledges restitution and partnership",
         "subGroupHeader": "Assuming debt & confidence",
-        "actor": "Paul & Philemon",
-        "grade": "Sacrificial substitution",
-        "genre": "Promissory debt guarantee (note)",
-        "godAction": "Master\u2019s loss claim \u2192 Imputed to Paul\u2019s account!",
-        "setting": "Paul\u2019s written note \u2192 Household ledger",
-        "relations": "Substantiation: Paul anchors restoration in gospel partnership and personally assumes Onesimus\u2019s financial liabilities."
+        "actor": "Sacrificial guarantor",
+        "grade": "Absorbing the cost personally",
+        "genre": "Written debt guarantee",
+        "godAction": "Master\u2019s claim \u2192 Charged to Paul!",
+        "setting": "Paul\u2019s note \u2192 Master\u2019s ledger",
+        "relations": "Paul personally assumes Onesimus\u2019s financial liabilities, guaranteeing payment with his own hand."
     },
     {
         "id": "p6",
@@ -394,12 +394,12 @@ const createDefaultPhilemonArgument = () => ({
         "title": "Confidence in obedience",
         "groupHeader": "Paul pledges restitution and partnership",
         "subGroupHeader": "Assuming debt & confidence",
-        "actor": "Paul & Philemon",
-        "grade": "Empowering trust",
+        "actor": "Pastoral encourager",
+        "grade": "Empowering trust in others",
         "genre": "Pastoral confidence",
-        "godAction": "Legal servitude \u2192 Free generosity",
+        "godAction": "Legal demand \u2192 Free generosity",
         "setting": "Spiritual bond: Rome to Colossae",
-        "relations": "Progression: Paul expresses high trust, confident Philemon will do even more than requested."
+        "relations": "Paul expresses high pastoral trust, confident Philemon will do even more than requested."
     },
     {
         "id": "p7",
@@ -407,12 +407,12 @@ const createDefaultPhilemonArgument = () => ({
         "title": "Guest room request",
         "groupHeader": "Paul pledges restitution and partnership",
         "subGroupHeader": "Expecting visit & fellowship",
-        "actor": "Paul & Philemon",
-        "grade": "Pastoral accountability",
-        "genre": "Personal request for lodging",
-        "godAction": "Private household \u2192 Public accountability",
+        "actor": "Accountable guest",
+        "grade": "Personal loving accountability",
+        "genre": "Personal lodging request",
+        "godAction": "Private house \u2192 Public accountability",
         "setting": "Guest room in Colossian home",
-        "relations": "Preparation: Requesting lodging establishes loving personal accountability for Philemon\u2019s decision."
+        "relations": "Requesting lodging establishes loving personal accountability for Philemon\u2019s handling of Onesimus."
     },
     {
         "id": "p8",
@@ -420,12 +420,12 @@ const createDefaultPhilemonArgument = () => ({
         "title": "Final greetings and grace",
         "groupHeader": "Paul pledges restitution and partnership",
         "subGroupHeader": "Expecting visit & fellowship",
-        "actor": "Coworkers & Church",
-        "grade": "Collaborative teamwork",
-        "genre": "Closing benediction & grace",
-        "godAction": "Social caste \u2192 Gospel family",
-        "setting": "Roman prison circle \u2192 Colossian assembly",
-        "relations": "Inclusio: Epaphras, Mark, Luke, and coworkers close with Christ\u2019s grace upon the whole congregation."
+        "actor": "Team coworker",
+        "grade": "Collaborative team ministry",
+        "genre": "Closing greetings & grace",
+        "godAction": "Social hierarchy \u2192 Gospel family",
+        "setting": "Prison circle \u2192 Colossian church",
+        "relations": "Paul and his missionary team close with Christ\u2019s enabling grace upon the entire assembly."
     }
 ],
   gridChart: {
@@ -437,42 +437,42 @@ const createDefaultPhilemonArgument = () => ({
     "rows": [
         {
             "id": "pg0",
-            "label": "Epistolary Structure",
+            "label": "Topic: Paul\u2019s Role",
             "cells": [
-                "Opening: Salutation (vv. 1\u20133) & Thanksgiving (vv. 4\u20137); Body: Appeal of Love (vv. 8\u20139) & Plea for Brother (vv. 10\u201316)",
-                "Body: Debt Guarantee (vv. 17\u201320), Confidence (v. 21), Guest Room (v. 22) & Closing Grace (vv. 23\u201325)"
+                "Humble prisoner (1\u20133), Grateful friend (4\u20137), Loving advocate (8\u20139), Spiritual father (10\u201316)",
+                "Sacrificial guarantor (17\u201320), Pastoral encourager (21), Accountable guest (22), Team coworker (23\u201325)"
             ]
         },
         {
             "id": "pg1",
-            "label": "Involved Parties",
+            "label": "Epistolary Genre",
             "cells": [
-                "Paul (\u201cprisoner\u201d), Timothy, Philemon, Apphia, Archippus, House Church & Onesimus (\u201cchild\u201d)",
-                "Paul (\u201cpartner\u201d & \u201cguarantor\u201d), Philemon (\u201cbrother\u201d), Onesimus & Coworkers (Mark, Luke, etc.)"
+                "Salutation, Thanksgiving, Apostolic plea, Paternal intercession",
+                "Written debt guarantee, Pastoral confidence, Lodging request, Benediction"
             ]
         },
         {
             "id": "pg2",
             "label": "Leadership Principle",
             "cells": [
-                "Humble identification + Affirmation before asking + Appealing in love over command",
-                "Sacrificial cost-bearing + Inspiring exceeding obedience + Pastoral accountability"
+                "Humility over status + Affirmation before asking + Persuasion over command",
+                "Absorbing cost personally + Empowering trust + Loving accountability"
             ]
         },
         {
             "id": "pg3",
             "label": "Slavery vs. Gospel",
             "cells": [
-                "Dominica potestas & runaway slave \u2192 Elevated to beloved brother forever (vv. 11, 16)",
-                "Legal debt retribution \u2192 Imputed to Paul\u2019s personal account; community transformed under grace"
+                "Imperial chains & runaway slave \u2192 Elevated to beloved brother forever",
+                "Legal financial claim \u2192 Charged to Paul\u2019s account; gospel family united"
             ]
         },
         {
             "id": "pg4",
-            "label": "Setting & Atmosphere",
+            "label": "Setting & Movement",
             "cells": [
-                "Roman prison chains to Colossian house church (warm, prayerful, relational plea)",
-                "Signed promissory note in Paul\u2019s hand \u2192 Lodging prepared in prayer \u2192 Team united in grace"
+                "Roman prison chains to Colossian house church (relational plea)",
+                "Written promissory note \u2192 Lodging in Colossae \u2192 Corporate grace"
             ]
         }
     ]
