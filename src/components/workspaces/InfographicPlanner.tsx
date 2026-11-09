@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import type { StudentInfographicPlan } from '../../types';
 import { Download, Info, Calendar, MessageSquare, Compass, Upload, Play, FileText, Image as ImageIcon, Sparkles } from 'lucide-react';
 import { parseDocxText } from '../../utils/docxParser';
@@ -16,12 +16,98 @@ export const InfographicPlanner: React.FC<InfographicPlannerProps> = ({
   markTaskDone,
   isTaskCompleted
 }) => {
+  const [activePosterTab, setActivePosterTab] = useState<'john316' | 'classic'>('john316');
+
 
   const handleFieldChange = (field: keyof StudentInfographicPlan, value: string) => {
     setInfographic({
       ...infographic,
       [field]: value
     });
+  };
+
+  const loadJohn316Sample = () => {
+    if (window.confirm("Load the complete John 3:16 '4 Steps for Studying the Bible' Infographic Plan & 60–75 Min Teaching Script?")) {
+      setInfographic({
+        infographicNotes: `JOHN 3:16 "4 STEPS FOR STUDYING THE BIBLE" A4 INFOGRAPHIC POSTER
+1. STEP 1: OBSERVATION (“WHAT DO I SEE?”)
+   • L-A-S-T Framework:
+     - L (Literal Form / Genre): Gospel Narrative / Redemptive Dialogue between Jesus and Nicodemus at night.
+     - A (Atmosphere): Solemn, compassionate, urgent life-or-death contrast, abundant divine grace.
+     - S (Structure): Causation ("For" / gar), Manner ("so loved" / houtōs), Purpose ("that He gave... that whoever believes"), Contrast ("not perish, BUT have eternal life").
+     - T (Terms / Phrases): God, loved, the world, gave, only begotten Son (monogenē), whoever believes, perish (apolētai), eternal life (zōēn aiōnion).
+   • Side Border: "JOHN 3:16   WHAT DO YOU SEE?"
+
+2. STEP 2: INTERPRETATION (“WHAT DOES IT MEAN?”)
+   • 1. Rational: WHY placed here? Nicodemus relied on Abrahamic physical heritage and legal works; Jesus reveals that eternal life requires a spiritual new birth from above, grounded solely in the cross.
+   • 2. Implicational: Cosmic scope ("the world"), infinite cost (God giving His unique Son), faith as the sole instrument of salvation.
+   • CONTEXT is KING!: Immediate context is John 3:14–15 (Moses lifting serpent in wilderness); Satellite context is John 20:30–31.
+   • Key Question: Does "the world" mean all are automatically saved? No! John 3:18 clarifies: whoever believes is saved, whoever does not is condemned already.
+   • Side Border: "JOHN 3:16   WHAT DOES IT MEAN?"
+
+3. STEP 3: CORRELATION (“WHERE DOES IT FIT?”)
+   • “Using Scriptures to Interpret Scriptures” (Canonical Harmony):
+     - Numbers 21:8–9: Bronze serpent on pole — dying sinners looked in faith and were healed.
+     - Romans 5:8: God demonstrates His love in that while we were yet sinners, Christ died for us.
+     - 1 John 4:9–10: God's love manifested in sending His only begotten Son as a propitiation.
+     - Genesis 22:2, 16: Abraham offering his only son Isaac on Mount Moriah.
+   • Side Border: "JOHN 3:16   WHERE DOES IT FIT?"
+
+4. STEP 4: APPLICATION (“HOW DOES IT WORK?”)
+   • 4 Movements of Transformation:
+     - Knowing: Know the text (costly divine love) & know yourself (helpless without Christ).
+     - Relating: Transition from performance-based anxiety to resting gratitude as God's child.
+     - Meditating: Contemplate the infinite price paid by the Father at Calvary (Rom 8:32).
+     - Practicing: Specific Behavior (Dumbbell icon):
+       * SPACEPETS Checklist (Promise to claim, Sin to confess, Command to obey, Error to avoid).
+       * The 4 P's (Personal, Practical, Possible, Provable).
+   • Side Border: "JOHN 3:16   HOW DOES IT WORK?"`,
+        audienceSize: '10 youth and cell group leaders',
+        presentationDate: 'November 2026',
+        zoomLink: 'On-site Interactive Workshop with printed John 3:16 Posters',
+        lessonPlan: `00:00–10:00 (10m) | Introduction to the 4 Steps for Studying the Bible:
+  • Hook: Why John 3:16 is often memorized but rarely studied inductively.
+  • Overview of the 4 Steps Poster: 1. Observation ➔ 2. Interpretation ➔ 3. Correlation ➔ 4. Application.
+
+10:00–28:00 (18m) | Step 1: Observation — "What Do I See?" in John 3:16:
+  • L-A-S-T Method:
+    - Genre & Atmosphere: Gospel narrative, solemn yet joyous tone.
+    - Structure: Causation ("For"), Degree ("so loved"), Purpose ("that He gave"), Contrast ("perish vs. eternal life").
+    - Terms: Unpacking "God", "loved", "gave", "only begotten Son", "whoever believes".
+
+28:00–48:00 (20m) | Step 2: Interpretation — "What Does It Mean?":
+  • Nicodemus' background: Pharisee, teacher of Israel seeking truth at night.
+  • "Context is King!": Linking John 3:16 to the Bronze Serpent in John 3:14–15.
+  • Addressing the key question: Does God's love mean universal salvation without faith? (John 3:18).
+
+48:00–60:00 (12m) | Step 3: Correlation — "Where Does It Fit?":
+  • Connecting John 3:16 with Numbers 21:8–9, Romans 5:8, and 1 John 4:9–10.
+  • How Scripture interprets Scripture.
+
+60:00–75:00 (15m) | Step 4: Application — "How Does It Work?":
+  • Knowing, Relating, Meditating, Practicing.
+  • Applying SPACEPETS & The 4 P's to John 3:16.
+  • Formulating a personal 7-day action plan for evangelism and worship.
+
+75:00–105:00 (30m) | Interactive Group Q&A & Poster Discussion.`,
+        questionsLogged: `1. Q: "Why does John 3:16 use the phrase 'only begotten Son' (monogenēs)?"
+   A: In Greek, 'monogenēs' means unique, one-of-a-kind, of sole incomparable rank. It emphasizes the infinite cost of the Father's gift.
+
+2. Q: "How does the Bronze Serpent in Numbers 21 explain saving faith in John 3:16?"
+   A: In Numbers 21, the dying Israelites did not have to climb the pole or perform good works; they simply looked at the bronze serpent in faith. Likewise, sinners look in faith to the crucified and risen Christ.
+
+3. Q: "Can I use this 4-step poster to teach young believers or children in Sunday School?"
+   A: Yes! The 4 Steps (Look, Think, Connect, Live) with L-A-S-T and SPACEPETS provide a visual, memorable roadmap for all ages.`,
+        reportNotes: `JOHN 3:16 INFOGRAPHIC TEACHING REPORT (200 Points)
+• Audience: 10 youth/cell leaders and university students.
+• Session Format: 75-minute interactive inductive study + 30 minutes Q&A.
+• Handout: Color-printed A4 "4 Steps for Studying the Bible (John 3:16)" Poster.
+• Participant Feedback:
+  1) The visual layout with L-A-S-T and the 4 P's made inductive Bible study feel accessible and actionable.
+  2) The Correlation link to Numbers 21:8–9 brought fresh depth to a verse they had heard hundreds of times.
+  3) Participants requested printed poster copies to laminate for their personal quiet times!`
+      });
+    }
   };
 
   const loadMasterSample = () => {
@@ -168,12 +254,35 @@ export const InfographicPlanner: React.FC<InfographicPlannerProps> = ({
         </div>
         <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
           <button
+            onClick={loadJohn316Sample}
+            className="btn btn-secondary"
+            style={{ border: '1px solid #10b981', color: '#10b981', display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: 'bold' }}
+          >
+            <Sparkles size={16} /> Load John 3:16 Poster Plan
+          </button>
+          <button
             onClick={loadMasterSample}
             className="btn btn-secondary"
             style={{ border: '1px solid var(--color-accent-gold)', color: 'var(--color-accent-gold)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}
           >
-            <Sparkles size={16} /> Load E17 Complete Sample
+            <Sparkles size={16} /> Load Classic E17 Plan
           </button>
+          <a
+            href="/John 3:16 Infographic.png"
+            download="John 3:16 Infographic.png"
+            className="btn btn-primary"
+            style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', textDecoration: 'none', background: '#0284c7', borderColor: '#0284c7' }}
+          >
+            <ImageIcon size={16} /> John 3:16 Poster (.PNG)
+          </a>
+          <a
+            href="/John 3:16 Infographic.pdf"
+            download="John 3:16 Infographic.pdf"
+            className="btn btn-primary"
+            style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', textDecoration: 'none', background: '#e11d48', borderColor: '#e11d48' }}
+          >
+            <FileText size={16} /> John 3:16 Poster (.PDF)
+          </a>
           <a
             href="/IBSM_Infographic_A4.png"
             download="IBSM_Infographic_A4.png"
@@ -238,44 +347,113 @@ export const InfographicPlanner: React.FC<InfographicPlannerProps> = ({
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
 
-        {/* Live A4 Infographic Preview */}
-        <div className="glass-card" style={{ border: '1px solid rgba(212, 175, 55, 0.35)' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.75rem' }}>
+        {/* Live A4 Infographic Preview with Tabs */}
+        <div className="glass-card" style={{ border: '1px solid rgba(212, 175, 55, 0.45)' }}>
+          {/* Tab Selection */}
+          <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.75rem', flexWrap: 'wrap' }}>
+            <button
+              onClick={() => setActivePosterTab('john316')}
+              className={`btn ${activePosterTab === 'john316' ? 'btn-primary' : 'btn-secondary'}`}
+              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: activePosterTab === 'john316' ? 'bold' : 'normal' }}
+            >
+              🌟 John 3:16 Poster ("4 Steps for Studying the Bible")
+            </button>
+            <button
+              onClick={() => setActivePosterTab('classic')}
+              className={`btn ${activePosterTab === 'classic' ? 'btn-primary' : 'btn-secondary'}`}
+              style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: activePosterTab === 'classic' ? 'bold' : 'normal' }}
+            >
+              📐 Classic 3-Pillar Architectural Blueprint
+            </button>
+          </div>
+
+          {activePosterTab === 'john316' ? (
             <div>
-              <h3 style={{ fontSize: '1.2rem', color: 'var(--color-accent-gold)', display: 'flex', alignItems: 'center', gap: '0.5rem', margin: 0 }}>
-                <ImageIcon size={18} /> Completed A4 IBSM Master Infographic (300-Pt Handout &amp; Teaching Tool)
-              </h3>
-              <p style={{ fontSize: '0.82rem', color: 'var(--color-text-secondary)', marginTop: '0.25rem' }}>
-                Captures all essential elements of IBSM from Observation (Blue: Detective) → Interpretation (Gold: Scholar) → Application (Green: Disciple) on a single A4 portrait sheet.
-              </p>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.75rem' }}>
+                <div>
+                  <h3 style={{ fontSize: '1.3rem', color: '#38bdf8', display: 'flex', alignItems: 'center', gap: '0.5rem', margin: 0 }}>
+                    <ImageIcon size={20} /> 4 STEPS FOR STUDYING The Bible — Case Study: John 3:16
+                  </h3>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.25rem' }}>
+                    Formatted to match your required pedagogical poster layout: 1. Observation (L-A-S-T) • 2. Interpretation (Context is King!) • 3. Correlation (Scripture with Scripture) • 4. Application (SPACEPETS &amp; 4 P's).
+                  </p>
+                </div>
+                <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
+                  <a
+                    href="/John 3:16 Infographic.png"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-outline-gold"
+                    style={{ fontSize: '0.82rem', padding: '0.4rem 0.75rem', textDecoration: 'none' }}
+                  >
+                    Open Full-Resolution Image (2000×3000)
+                  </a>
+                  <a
+                    href="/John 3:16 Infographic.png"
+                    download="John 3:16 Infographic.png"
+                    className="btn btn-primary"
+                    style={{ fontSize: '0.82rem', padding: '0.4rem 0.75rem', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.35rem', background: '#0284c7', borderColor: '#0284c7' }}
+                  >
+                    <Download size={14} /> Download Poster (.PNG)
+                  </a>
+                  <a
+                    href="/John 3:16 Infographic.pdf"
+                    download="John 3:16 Infographic.pdf"
+                    className="btn btn-primary"
+                    style={{ fontSize: '0.82rem', padding: '0.4rem 0.75rem', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.35rem', background: '#e11d48', borderColor: '#e11d48' }}
+                  >
+                    <Download size={14} /> Download Printable A4 (.PDF)
+                  </a>
+                </div>
+              </div>
+              <div style={{ background: '#ffffff', padding: '1.25rem', borderRadius: '10px', textAlign: 'center', border: '1px solid #e2e8f0' }}>
+                <img
+                  src="/John 3:16 Infographic.png"
+                  alt="4 Steps for Studying the Bible - John 3:16 Poster"
+                  style={{ maxWidth: '100%', maxHeight: '980px', borderRadius: '6px', boxShadow: '0 8px 30px rgba(0,0,0,0.18)', border: '1px solid #d1d5db' }}
+                />
+              </div>
             </div>
-            <div style={{ display: 'flex', gap: '0.6rem' }}>
-              <a
-                href="/IBSM_Infographic_A4.png"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-outline-gold"
-                style={{ fontSize: '0.82rem', padding: '0.4rem 0.75rem', textDecoration: 'none' }}
-              >
-                Open Full-Size A4 Image
-              </a>
-              <a
-                href="/IBSM Infographic & Teaching Script.docx"
-                download="IBSM Infographic & Teaching Script.docx"
-                className="btn btn-primary"
-                style={{ fontSize: '0.82rem', padding: '0.4rem 0.75rem', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.35rem' }}
-              >
-                <Download size={14} /> Download 300-pt .DOCX (A4 Infographic + 60–75m Script)
-              </a>
+          ) : (
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.75rem' }}>
+                <div>
+                  <h3 style={{ fontSize: '1.2rem', color: 'var(--color-accent-gold)', display: 'flex', alignItems: 'center', gap: '0.5rem', margin: 0 }}>
+                    <ImageIcon size={18} /> Completed A4 IBSM Master Infographic (300-Pt Handout &amp; Teaching Tool)
+                  </h3>
+                  <p style={{ fontSize: '0.82rem', color: 'var(--color-text-secondary)', marginTop: '0.25rem' }}>
+                    Captures all essential elements of IBSM from Observation (Blue: Detective) → Interpretation (Gold: Scholar) → Application (Green: Disciple) on a single A4 portrait sheet.
+                  </p>
+                </div>
+                <div style={{ display: 'flex', gap: '0.6rem' }}>
+                  <a
+                    href="/IBSM_Infographic_A4.png"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-outline-gold"
+                    style={{ fontSize: '0.82rem', padding: '0.4rem 0.75rem', textDecoration: 'none' }}
+                  >
+                    Open Full-Size A4 Image
+                  </a>
+                  <a
+                    href="/IBSM Infographic & Teaching Script.docx"
+                    download="IBSM Infographic & Teaching Script.docx"
+                    className="btn btn-primary"
+                    style={{ fontSize: '0.82rem', padding: '0.4rem 0.75rem', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.35rem' }}
+                  >
+                    <Download size={14} /> Download 300-pt .DOCX
+                  </a>
+                </div>
+              </div>
+              <div style={{ background: '#f9f7f1', padding: '1rem', borderRadius: '10px', textAlign: 'center', border: '1px solid var(--border-color)' }}>
+                <img
+                  src="/IBSM_Infographic_A4.png"
+                  alt="A4 IBSM Infographic: Observation, Interpretation, Application"
+                  style={{ maxWidth: '100%', maxHeight: '920px', borderRadius: '6px', boxShadow: '0 6px 24px rgba(0,0,0,0.22)' }}
+                />
+              </div>
             </div>
-          </div>
-          <div style={{ background: '#f9f7f1', padding: '1rem', borderRadius: '10px', textAlign: 'center', border: '1px solid var(--border-color)' }}>
-            <img
-              src="/IBSM_Infographic_A4.png"
-              alt="A4 IBSM Infographic: Observation, Interpretation, Application"
-              style={{ maxWidth: '100%', maxHeight: '920px', borderRadius: '6px', boxShadow: '0 6px 24px rgba(0,0,0,0.22)' }}
-            />
-          </div>
+          )}
         </div>
         
         {/* Infographic Design Blueprint */}
