@@ -425,7 +425,32 @@ export const InfographicPlanner: React.FC<InfographicPlannerProps> = ({
                     Captures all essential elements of IBSM from Observation (Blue: Detective) → Interpretation (Gold: Scholar) → Application (Green: Disciple) on a single A4 portrait sheet.
                   </p>
                 </div>
-                <div style={{ display: 'flex', gap: '0.6rem' }}>
+                <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
+                  <a
+                    href="/Bible_Detective_Journey.html"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-outline-gold"
+                    style={{ fontSize: '0.82rem', padding: '0.4rem 0.75rem', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.35rem' }}
+                  >
+                    ✏️ Open Interactive HTML Editor
+                  </a>
+                  <a
+                    href="/Bible_Detective_Journey.pptx"
+                    download="Bible_Detective_Journey.pptx"
+                    className="btn btn-outline-gold"
+                    style={{ fontSize: '0.82rem', padding: '0.4rem 0.75rem', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.35rem' }}
+                  >
+                    📊 Download Editable .PPTX
+                  </a>
+                  <a
+                    href="/Bible_Detective_Journey.svg"
+                    download="Bible_Detective_Journey.svg"
+                    className="btn btn-outline-gold"
+                    style={{ fontSize: '0.82rem', padding: '0.4rem 0.75rem', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.35rem' }}
+                  >
+                    🎨 Download .SVG
+                  </a>
                   <a
                     href="/IBSM_Infographic_A4.png"
                     target="_blank"

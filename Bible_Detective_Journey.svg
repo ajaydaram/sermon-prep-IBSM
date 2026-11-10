@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="100%" height="100%" style="background-color: #F7EBD6; font-family: 'Arial', 'Georgia', sans-serif;">
+  <defs>
+    <!-- Filter for subtle drop shadows -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="#372319" flood-opacity="0.25"/>
+    </filter>
+    <filter id="paperShadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <!-- Footprint marker definition -->
+    <g id="footprint">
+      <ellipse cx="0" cy="-6" rx="4.5" ry="7.5" fill="#3D291D"/>
+      <ellipse cx="0" cy="7" rx="3.5" ry="4" fill="#3D291D"/>
+    </g>
+  </defs>
+
+  <!-- Parchment Texture Background Border -->
+  <rect x="20" y="20" width="1160" height="1560" rx="20" fill="#F8EEDD" stroke="#D8C7A5" stroke-width="3"/>
+  <rect x="35" y="35" width="1130" height="1530" rx="15" fill="none" stroke="#E3D5B9" stroke-width="1.5" stroke-dasharray="8 6"/>
+
+  <!-- ========================================== -->
+  <!-- HEADER SECTION                             -->
+  <!-- ========================================== -->
+  <g id="header" text-anchor="middle">
+    <!-- Main Title with 3D/Adventure Style -->
+    <text x="604" y="104" font-family="'Impact', 'Arial Black', sans-serif" font-size="54" fill="#5A2E19" letter-spacing="2">THE BIBLE DETECTIVE’S JOURNEY</text>
+    <text x="600" y="100" font-family="'Impact', 'Arial Black', sans-serif" font-size="54" fill="#8C4627" letter-spacing="2" stroke="#421C0E" stroke-width="1.5">THE BIBLE DETECTIVE’S JOURNEY</text>
+
+    <!-- Subtitle -->
+    <text x="600" y="145" font-family="'Arial Black', sans-serif" font-size="28" fill="#2D1E16" letter-spacing="1">FROM OBSERVATION TO OBEDIENCE</text>
+    
+    <!-- Description -->
+    <text x="600" y="180" font-family="'Georgia', serif" font-size="19" font-style="italic" fill="#4A3B32">A simple, careful way to understand Scripture and respond faithfully.</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- STEP 01: OBSERVATION                       -->
+  <!-- ========================================== -->
+  <g id="step01">
+    <!-- Step Badge 01 -->
+    <circle cx="120" cy="250" r="38" fill="#4B6346" stroke="#2E412A" stroke-width="3" filter="url(#dropShadow)"/>
+    <text x="120" y="262" font-family="'Arial Black', sans-serif" font-size="34" fill="#FFFFFF" text-anchor="middle">01</text>
+    
+    <!-- Heading -->
+    <text x="180" y="260" font-family="'Arial Black', sans-serif" font-size="32" fill="#2D1E16">OBSERVATION – <tspan font-family="'Georgia', serif" font-size="30" font-style="italic" font-weight="normal">What do I see?</tspan></text>
+
+    <!-- Pinned Sticky Notes (Top Right) -->
+    <!-- Yellow Note -->
+    <g transform="translate(850, 230) rotate(-4)" filter="url(#dropShadow)">
+      <rect x="0" y="0" width="130" height="120" fill="#FDF0A6" stroke="#D4C882" stroke-width="1.5"/>
+      <!-- Pin -->
+      <circle cx="65" cy="12" r="7" fill="#C52818"/>
+      <circle cx="63" cy="10" r="2.5" fill="#FFFFFF"/>
+      <text x="65" y="45" font-family="'Arial Black', sans-serif" font-size="14" fill="#2E2015" text-anchor="middle">LOOK</text>
+      <text x="65" y="65" font-family="'Arial Black', sans-serif" font-size="14" fill="#2E2015" text-anchor="middle">DETECTIVE</text>
+      <text x="65" y="85" font-family="'Arial Black', sans-serif" font-size="14" fill="#2E2015" text-anchor="middle">NOTES</text>
+    </g>
+
+    <!-- White Lined Note -->
+    <g transform="translate(1000, 220) rotate(5)" filter="url(#dropShadow)">
+      <rect x="0" y="0" width="130" height="135" fill="#FCFAF2" stroke="#D9D2BF" stroke-width="1.5"/>
+      <!-- Pin -->
+      <circle cx="65" cy="12" r="7" fill="#C52818"/>
+      <circle cx="63" cy="10" r="2.5" fill="#FFFFFF"/>
+      <!-- Handwritten lines representation -->
+      <line x1="20" y1="40" x2="110" y2="40" stroke="#7A8B99" stroke-width="2" stroke-dasharray="10 5 15 4"/>
+      <line x1="20" y1="60" x2="110" y2="60" stroke="#7A8B99" stroke-width="2" stroke-dasharray="12 4 8 6"/>
+      <line x1="20" y1="80" x2="110" y2="80" stroke="#7A8B99" stroke-width="2" stroke-dasharray="15 6 10 5"/>
+      <line x1="20" y1="100" x2="110" y2="100" stroke="#7A8B99" stroke-width="2" stroke-dasharray="8 5 18 4"/>
+    </g>
+
+    <!-- Detective Character & Display Stand -->
+    <!-- Display Box -->
+    <g transform="translate(160, 360)">
+      <!-- Wooden Base -->
+      <rect x="0" y="70" width="140" height="35" rx="5" fill="#8C522B" stroke="#4A260F" stroke-width="2"/>
+      <text x="70" y="93" font-family="'Impact', sans-serif" font-size="18" fill="#FDF3E3" text-anchor="middle">JOHN 3:16</text>
+      <!-- Glass Cover -->
+      <rect x="10" y="0" width="120" height="70" rx="3" fill="#E8F4F8" fill-opacity="0.45" stroke="#7FA5B5" stroke-width="2"/>
+      <!-- Scroll Inside -->
+      <rect x="25" y="15" width="90" height="42" rx="4" fill="#FBF3DE" stroke="#C8B388" stroke-width="1.5"/>
+      <text x="70" y="38" font-family="'Impact', sans-serif" font-size="20" fill="#2E1D13" text-anchor="middle">John 3:16</text>
+      <!-- Leather Satchel beside -->
+      <rect x="155" y="50" width="75" height="55" rx="6" fill="#753C1A" stroke="#3D1D09" stroke-width="2"/>
+      <path d="M 175 50 L 175 35 Q 192 28 210 35 L 210 50" fill="none" stroke="#753C1A" stroke-width="6"/>
+    </g>
+
+    <!-- Magnifying Glass Callout -->
+    <g transform="translate(360, 310)" filter="url(#dropShadow)">
+      <!-- Magnifying Glass Rim -->
+      <circle cx="80" cy="80" r="75" fill="#FFFFFF" fill-opacity="0.95" stroke="#372319" stroke-width="6"/>
+      <!-- Handle -->
+      <rect x="135" y="135" width="22" height="75" rx="8" transform="rotate(-45 135 135)" fill="#6B3B1C" stroke="#372319" stroke-width="3"/>
+      <!-- Text inside lens -->
+      <text x="80" y="55" font-family="'Georgia', serif" font-size="19" fill="#2E1E14" text-anchor="middle">Notice</text>
+      <text x="80" y="80" font-family="'Georgia', serif" font-size="20" font-weight="bold" fill="#8C2D19" text-anchor="middle">“God loved”,</text>
+      <text x="80" y="104" font-family="'Georgia', serif" font-size="20" font-weight="bold" fill="#8C2D19" text-anchor="middle">“He gave”,</text>
+      <text x="80" y="128" font-family="'Georgia', serif" font-size="18" fill="#2E1E14" text-anchor="middle">and “whoever</text>
+      <text x="80" y="148" font-family="'Georgia', serif" font-size="18" fill="#2E1E14" text-anchor="middle">believes”.</text>
+    </g>
+
+    <!-- Arrow & Look closely prompt -->
+    <g transform="translate(560, 305)">
+      <path d="M 0 20 L -30 35 L -10 20 L -30 5 Z" fill="#7A3222"/>
+      <text x="15" y="22" font-family="'Arial Black', sans-serif" font-size="16" fill="#2D1E16">LOOK CLOSELY AT WHAT</text>
+      <text x="15" y="44" font-family="'Arial Black', sans-serif" font-size="16" fill="#2D1E16">THE PASSAGE ACTUALLY SAYS.</text>
+    </g>
+
+    <!-- Ask Six Questions Box -->
+    <g transform="translate(600, 380)" filter="url(#paperShadow)">
+      <rect x="0" y="0" width="250" height="90" rx="8" fill="#FFFDF8" stroke="#3D291D" stroke-width="2"/>
+      <text x="125" y="30" font-family="'Arial Black', sans-serif" font-size="15" fill="#2D1E16" text-anchor="middle">ASK SIX QUESTIONS:</text>
+      <text x="125" y="56" font-family="'Arial Black', sans-serif" font-size="16" fill="#7A2E1C" text-anchor="middle">WHO? WHAT? WHERE?</text>
+      <text x="125" y="78" font-family="'Arial Black', sans-serif" font-size="16" fill="#7A2E1C" text-anchor="middle">WHEN? WHY? HOW?</text>
+    </g>
+
+    <!-- Notice the Text's Clues -->
+    <g transform="translate(870, 390)">
+      <text x="0" y="20" font-family="'Arial Black', sans-serif" font-size="15" fill="#2D1E16">NOTICE THE TEXT’S CLUES:</text>
+      <text x="10" y="46" font-family="'Arial', sans-serif" font-size="15" font-weight="bold" fill="#3D291D">• Key words</text>
+      <text x="120" y="46" font-family="'Arial', sans-serif" font-size="15" font-weight="bold" fill="#3D291D">• Repetitions</text>
+      <text x="10" y="72" font-family="'Arial', sans-serif" font-size="15" font-weight="bold" fill="#3D291D">• Contrasts</text>
+      <text x="120" y="72" font-family="'Arial', sans-serif" font-size="15" font-weight="bold" fill="#3D291D">• Comparisons</text>
+      <text x="10" y="98" font-family="'Arial', sans-serif" font-size="15" font-weight="bold" fill="#3D291D">• Connecting words</text>
+    </g>
+
+    <!-- Compass (Left) -->
+    <g transform="translate(80, 520)" filter="url(#dropShadow)">
+      <circle cx="35" cy="35" r="32" fill="#D4AF37" stroke="#8C6D1F" stroke-width="3"/>
+      <circle cx="35" cy="35" r="26" fill="#FCFAF2" stroke="#8C6D1F" stroke-width="1.5"/>
+      <!-- Compass Star -->
+      <polygon points="35,14 39,32 35,35 31,32" fill="#BA2C18"/>
+      <polygon points="35,56 39,38 35,35 31,38" fill="#2E3A4A"/>
+      <polygon points="14,35 32,31 35,35 32,39" fill="#2E3A4A"/>
+      <polygon points="56,35 38,31 35,35 38,39" fill="#2E3A4A"/>
+    </g>
+  </g>
+
+  <!-- Footprints Trail 1 -> 2 -->
+  <g id="trail1">
+    <use href="#footprint" transform="translate(850, 520) rotate(110)"/>
+    <use href="#footprint" transform="translate(800, 535) rotate(100)"/>
+    <use href="#footprint" transform="translate(740, 540) rotate(85)"/>
+    <use href="#footprint" transform="translate(670, 530) rotate(70)"/>
+    <use href="#footprint" transform="translate(600, 510) rotate(55)"/>
+    <use href="#footprint" transform="translate(530, 520) rotate(80)"/>
+    <use href="#footprint" transform="translate(460, 550) rotate(110)"/>
+    <use href="#footprint" transform="translate(410, 590) rotate(130)"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- STEP 02: INTERPRETATION                   -->
+  <!-- ========================================== -->
+  <g id="step02">
+    <!-- Step Badge 02 (Gold) -->
+    <circle cx="700" cy="620" r="38" fill="#AA6A2A" stroke="#734213" stroke-width="3" filter="url(#dropShadow)"/>
+    <text x="700" y="632" font-family="'Arial Black', sans-serif" font-size="34" fill="#FFFFFF" text-anchor="middle">02</text>
+
+    <!-- Heading 02 -->
+    <text x="760" y="618" font-family="'Arial Black', sans-serif" font-size="32" fill="#2D1E16">INTERPRETATION –</text>
+    <text x="760" y="652" font-family="'Georgia', serif" font-size="30" font-style="italic" fill="#2D1E16">What does it mean?</text>
+
+    <!-- Vintage World Map & Pencil (Left) -->
+    <g transform="translate(80, 660)" filter="url(#paperShadow)">
+      <rect x="0" y="0" width="200" height="140" rx="4" fill="#F5E8C7" stroke="#A89368" stroke-width="2"/>
+      <!-- Continents simplified outlines -->
+      <path d="M 20 30 Q 50 20 80 40 Q 60 70 30 80 Z" fill="#D4C29B"/>
+      <path d="M 110 35 Q 160 25 180 50 Q 170 90 130 80 Z" fill="#D4C29B"/>
+      <path d="M 40 95 Q 60 90 70 120 Q 40 130 30 110 Z" fill="#D4C29B"/>
+      <path d="M 130 95 Q 170 90 160 125 Q 130 130 120 110 Z" fill="#D4C29B"/>
+      <!-- Pencil -->
+      <g transform="translate(140, 120) rotate(35)">
+        <polygon points="0,0 80,0 70,14 -10,14" fill="#C58B39"/>
+        <polygon points="-10,14 -20,7 -10,0" fill="#E8C99B"/>
+        <polygon points="-17,9 -20,7 -17,5" fill="#222222"/>
+      </g>
+    </g>
+
+    <!-- Instruction Text -->
+    <g transform="translate(430, 680)">
+      <text x="0" y="20" font-family="'Arial Black', sans-serif" font-size="17" fill="#2D1E16">SEEK THE MEANING THE</text>
+      <text x="0" y="44" font-family="'Arial Black', sans-serif" font-size="17" fill="#2D1E16">BIBLICAL AUTHOR INTENDED.</text>
+    </g>
+
+    <!-- Use Five Lenses Box -->
+    <g transform="translate(430, 750)">
+      <text x="0" y="20" font-family="'Arial Black', sans-serif" font-size="16" fill="#8C3F1B">USE FIVE LENSES:</text>
+      <text x="10" y="48" font-family="'Arial Black', sans-serif" font-size="15" fill="#2D1E16">• CONTENT</text>
+      <text x="10" y="74" font-family="'Arial Black', sans-serif" font-size="15" fill="#2D1E16">• CONTEXT</text>
+      <text x="10" y="100" font-family="'Arial Black', sans-serif" font-size="15" fill="#2D1E16">• COMPARISON</text>
+      <text x="10" y="126" font-family="'Arial Black', sans-serif" font-size="15" fill="#2D1E16">• CULTURE</text>
+      <text x="10" y="152" font-family="'Arial Black', sans-serif" font-size="15" fill="#2D1E16">• CONSULTATION</text>
+      <text x="25" y="174" font-family="'Georgia', serif" font-size="13" font-style="italic" fill="#523E32">(reliable study resources)</text>
+    </g>
+
+    <!-- Open Study Bible (Right) -->
+    <g transform="translate(730, 700)" filter="url(#dropShadow)">
+      <!-- Bible Covers -->
+      <path d="M 20 120 Q 150 140 280 120 L 290 20 Q 150 35 20 20 Z" fill="#3D2415" stroke="#1D0E06" stroke-width="3"/>
+      <!-- Bible Pages -->
+      <path d="M 30 110 Q 150 125 270 110 L 280 15 Q 150 30 30 15 Z" fill="#FDFBF4" stroke="#D1C4A5" stroke-width="2"/>
+      <line x1="150" y1="25" x2="150" y2="120" stroke="#8C6E4A" stroke-width="3"/>
+      <!-- Text Lines representation -->
+      <line x1="45" y1="35" x2="135" y2="35" stroke="#9E907B" stroke-width="1.5" stroke-dasharray="5 3"/>
+      <line x1="45" y1="50" x2="135" y2="50" stroke="#9E907B" stroke-width="1.5" stroke-dasharray="8 4"/>
+      <line x1="45" y1="65" x2="135" y2="65" stroke="#9E907B" stroke-width="1.5" stroke-dasharray="6 3"/>
+      <line x1="45" y1="80" x2="135" y2="80" stroke="#9E907B" stroke-width="1.5" stroke-dasharray="7 4"/>
+      <line x1="165" y1="35" x2="255" y2="35" stroke="#9E907B" stroke-width="1.5" stroke-dasharray="8 3"/>
+      <line x1="165" y1="50" x2="255" y2="50" stroke="#9E907B" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <line x1="165" y1="65" x2="255" y2="65" stroke="#9E907B" stroke-width="1.5" stroke-dasharray="7 3"/>
+      <line x1="165" y1="80" x2="255" y2="80" stroke="#9E907B" stroke-width="1.5" stroke-dasharray="5 4"/>
+    </g>
+
+    <!-- Scroll Banner: Read John 3:1-21 -->
+    <g transform="translate(740, 890)" filter="url(#paperShadow)">
+      <path d="M 0 10 Q 15 0 30 10 L 350 10 Q 365 20 380 10 L 380 90 Q 365 80 350 90 L 30 90 Q 15 100 0 90 Z" fill="#F7EED2" stroke="#8C6B3D" stroke-width="2"/>
+      <text x="190" y="42" font-family="'Georgia', serif" font-size="16" font-weight="bold" fill="#2E1D13" text-anchor="middle">Read John 3:1-21 and</text>
+      <text x="190" y="66" font-family="'Georgia', serif" font-size="16" font-weight="bold" fill="#2E1D13" text-anchor="middle">consider Jesus’ conversation</text>
+      <text x="190" y="88" font-family="'Georgia', serif" font-size="16" font-weight="bold" fill="#2E1D13" text-anchor="middle">with Nicodemus.</text>
+    </g>
+  </g>
+
+  <!-- Footprints Trail 2 -> 3 -->
+  <g id="trail2">
+    <use href="#footprint" transform="translate(780, 990) rotate(115)"/>
+    <use href="#footprint" transform="translate(730, 1015) rotate(110)"/>
+    <use href="#footprint" transform="translate(670, 1025) rotate(95)"/>
+    <use href="#footprint" transform="translate(600, 1015) rotate(80)"/>
+    <use href="#footprint" transform="translate(530, 990) rotate(65)"/>
+    <use href="#footprint" transform="translate(460, 970) rotate(50)"/>
+    <use href="#footprint" transform="translate(390, 980) rotate(80)"/>
+    <use href="#footprint" transform="translate(330, 1020) rotate(115)"/>
+    <use href="#footprint" transform="translate(290, 1065) rotate(135)"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- STEP 03: APPLICATION                       -->
+  <!-- ========================================== -->
+  <g id="step03">
+    <!-- Step Badge 03 (Green) -->
+    <circle cx="120" cy="1070" r="38" fill="#4B6346" stroke="#2E412A" stroke-width="3" filter="url(#dropShadow)"/>
+    <text x="120" y="1082" font-family="'Arial Black', sans-serif" font-size="34" fill="#FFFFFF" text-anchor="middle">03</text>
+
+    <!-- Heading 03 -->
+    <text x="180" y="1068" font-family="'Arial Black', sans-serif" font-size="32" fill="#2D1E16">APPLICATION –</text>
+    <text x="180" y="1102" font-family="'Georgia', serif" font-size="30" font-style="italic" fill="#2D1E16">How should I respond?</text>
+
+    <!-- Wooden Signpost -->
+    <g transform="translate(390, 1100)" filter="url(#dropShadow)">
+      <!-- Post -->
+      <rect x="100" y="80" width="16" height="70" fill="#693C1C" stroke="#3D200E" stroke-width="2"/>
+      <!-- Wooden Board -->
+      <polygon points="0,0 210,0 220,40 210,85 0,85 -10,40" fill="#C9945B" stroke="#5C3415" stroke-width="3"/>
+      <!-- Wood Grain lines -->
+      <line x1="15" y1="28" x2="195" y2="28" stroke="#A87540" stroke-width="1.5"/>
+      <line x1="20" y1="58" x2="190" y2="58" stroke="#A87540" stroke-width="1.5"/>
+      <text x="105" y="30" font-family="'Impact', sans-serif" font-size="16" fill="#2D1608" text-anchor="middle">LET THE TRUTH SHAPE</text>
+      <text x="105" y="52" font-family="'Impact', sans-serif" font-size="16" fill="#2D1608" text-anchor="middle">YOUR FAITH, CHARACTER,</text>
+      <text x="105" y="74" font-family="'Impact', sans-serif" font-size="16" fill="#2D1608" text-anchor="middle">AND EVERYDAY LIFE.</text>
+    </g>
+
+    <!-- The Four P's Box -->
+    <g transform="translate(680, 1115)">
+      <text x="0" y="20" font-family="'Arial Black', sans-serif" font-size="18" fill="#2D1E16">THE FOUR P’S:</text>
+      <text x="10" y="50" font-family="'Arial Black', sans-serif" font-size="15" fill="#2D1E16">• PERSONAL <tspan font-family="'Georgia', serif" font-size="14" font-weight="normal">(What is my response?)</tspan></text>
+      <text x="10" y="78" font-family="'Arial Black', sans-serif" font-size="15" fill="#2D1E16">• PRACTICAL <tspan font-family="'Georgia', serif" font-size="14" font-weight="normal">(What can I do?)</tspan></text>
+      <text x="10" y="106" font-family="'Arial Black', sans-serif" font-size="15" fill="#2D1E16">• POSSIBLE <tspan font-family="'Georgia', serif" font-size="14" font-weight="normal">(What can I begin?)</tspan></text>
+      <text x="10" y="134" font-family="'Arial Black', sans-serif" font-size="15" fill="#2D1E16">• PROVABLE <tspan font-family="'Georgia', serif" font-size="14" font-weight="normal">(Is it grounded?)</tspan></text>
+    </g>
+
+    <!-- Cross on Hill Illustration (Right) -->
+    <g transform="translate(980, 1110)">
+      <!-- Green Hill -->
+      <path d="M 0 65 Q 60 40 120 65 L 120 75 L 0 75 Z" fill="#6A8F52"/>
+      <!-- Wooden Cross -->
+      <rect x="42" y="10" width="12" height="55" fill="#5A341A" stroke="#2E1709" stroke-width="1.5"/>
+      <rect x="26" y="22" width="44" height="10" fill="#5A341A" stroke="#2E1709" stroke-width="1.5"/>
+      <!-- Floating Hearts -->
+      <path d="M 15 20 C 15 15, 20 12, 23 16 C 26 12, 31 15, 31 20 C 31 25, 23 30, 23 30 C 23 30, 15 25, 15 20 Z" fill="#C53929"/>
+      <path d="M 80 18 C 80 14, 84 11, 86 14 C 88 11, 92 14, 92 18 C 92 22, 86 26, 86 26 C 86 26, 80 22, 80 18 Z" fill="#C53929"/>
+    </g>
+
+    <!-- Spiral Notepad (Bottom Right) -->
+    <g transform="translate(860, 1260)" filter="url(#dropShadow)">
+      <!-- Note Page -->
+      <rect x="0" y="15" width="220" height="150" rx="6" fill="#FFFDF8" stroke="#4A3423" stroke-width="2"/>
+      <!-- Spiral Wire Rings -->
+      <g stroke="#3D291D" stroke-width="3" fill="none">
+        <circle cx="20" cy="15" r="5"/>
+        <circle cx="45" cy="15" r="5"/>
+        <circle cx="70" cy="15" r="5"/>
+        <circle cx="95" cy="15" r="5"/>
+        <circle cx="120" cy="15" r="5"/>
+        <circle cx="145" cy="15" r="5"/>
+        <circle cx="170" cy="15" r="5"/>
+        <circle cx="195" cy="15" r="5"/>
+      </g>
+      <!-- Prompt Inside Notepad -->
+      <text x="110" y="55" font-family="'Georgia', serif" font-size="18" font-style="italic" font-weight="bold" fill="#22150D" text-anchor="middle">How should God’s</text>
+      <text x="110" y="80" font-family="'Georgia', serif" font-size="18" font-style="italic" font-weight="bold" fill="#22150D" text-anchor="middle">love shown in</text>
+      <text x="110" y="105" font-family="'Georgia', serif" font-size="18" font-style="italic" font-weight="bold" fill="#22150D" text-anchor="middle">Christ shape my</text>
+      <text x="110" y="130" font-family="'Georgia', serif" font-size="18" font-style="italic" font-weight="bold" fill="#22150D" text-anchor="middle">faith and life?</text>
+    </g>
+  </g>
+
+  <!-- Footprints Trail 3 -> Action -->
+  <g id="trail3">
+    <use href="#footprint" transform="translate(240, 1260) rotate(50)"/>
+    <use href="#footprint" transform="translate(300, 1285) rotate(70)"/>
+    <use href="#footprint" transform="translate(365, 1300) rotate(85)"/>
+    <use href="#footprint" transform="translate(435, 1305) rotate(90)"/>
+    <use href="#footprint" transform="translate(505, 1295) rotate(80)"/>
+    <use href="#footprint" transform="translate(575, 1270) rotate(70)"/>
+    <use href="#footprint" transform="translate(645, 1255) rotate(60)"/>
+    <use href="#footprint" transform="translate(720, 1255) rotate(70)"/>
+    <use href="#footprint" transform="translate(790, 1275) rotate(95)"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- FOOTER SUMMARY SECTION                     -->
+  <!-- ========================================== -->
+  <g id="footer" text-anchor="middle">
+    <!-- OBSERVE -> INTERPRET -> APPLY -->
+    <text x="600" y="1415" font-family="'Arial Black', sans-serif" font-size="28" fill="#2B1A11" letter-spacing="1">OBSERVE  ➔  INTERPRET  ➔  APPLY</text>
+    <text x="600" y="1448" font-family="'Georgia', serif" font-size="18" font-style="italic" fill="#523E32">A continuing cycle of study, faith and obedience</text>
+
+    <!-- Master Banner Quote -->
+    <g transform="translate(180, 1475)">
+      <rect x="0" y="0" width="840" height="65" rx="8" fill="#F0E1C6" stroke="#8C6E43" stroke-width="1.5"/>
+      <text x="420" y="27" font-family="'Georgia', serif" font-size="17.5" font-weight="bold" fill="#2E1B11">“Observe the text carefully. Interpret it faithfully. Apply it obediently.”</text>
+      <text x="420" y="48" font-family="'Arial', sans-serif" font-size="13" font-weight="bold" fill="#4A3423">Read the passage in context • Let Scripture interpret Scripture • Respond to God’s grace.</text>
+    </g>
+  </g>
+</svg>

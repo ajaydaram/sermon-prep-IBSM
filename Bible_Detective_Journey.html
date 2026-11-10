@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bible Detective’s Journey — Interactive Editable Infographic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Cinzel:wght@700;900&family=Montserrat:wght@400;600;700;900&family=Lora:ital,wght@0,500;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --parchment: #F6EBD6;
+      --parchment-border: #D8C7A5;
+      --title-brown: #8C4B2D;
+      --dark-brown: #372319;
+      --green-badge: #4E6548;
+      --gold-badge: #A8672B;
+      --yellow-sticky: #FAEBA0;
+      --white-paper: #FCFAF5;
+      --card-border: #50321E;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #2b2724;
+      color: var(--dark-brown);
+      font-family: 'Montserrat', sans-serif;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Floating Action Control Bar */
+    .toolbar {
+      position: sticky;
+      top: 10px;
+      z-index: 100;
+      background: rgba(30, 25, 22, 0.92);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      border-radius: 40px;
+      padding: 10px 24px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .toolbar-title {
+      color: #E6C875;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn {
+      background: #8C4B2D;
+      color: #FFF;
+      border: 1px solid #B36842;
+      border-radius: 20px;
+      padding: 7px 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #A35A37;
+      transform: translateY(-1px);
+    }
+
+    .btn-gold {
+      background: #D4AF37;
+      color: #2D1A0E;
+      border-color: #E8C860;
+    }
+    .btn-gold:hover {
+      background: #E8C860;
+    }
+
+    .btn-green {
+      background: #4E6548;
+      border-color: #627F5B;
+    }
+    .btn-green:hover {
+      background: #627F5B;
+    }
+
+    /* Main Printable A4 Poster Canvas */
+    .poster-canvas {
+      width: 100%;
+      max-width: 900px;
+      min-height: 1250px;
+      background-color: var(--parchment);
+      background-image: 
+        radial-gradient(#E8D7BE 15%, transparent 16%),
+        radial-gradient(#E8D7BE 15%, transparent 16%);
+      background-size: 60px 60px;
+      background-position: 0 0, 30px 30px;
+      border-radius: 16px;
+      box-shadow: 0 15px 50px rgba(0,0,0,0.45);
+      padding: 45px 40px;
+      position: relative;
+      border: 10px solid #EADBBE;
+      outline: 2px dashed #CBB590;
+      outline-offset: -12px;
+    }
+
+    /* Editable Text Indicator */
+    [contenteditable="true"] {
+      outline: none;
+      transition: background 0.2s, box-shadow 0.2s;
+      border-radius: 3px;
+    }
+    [contenteditable="true"]:hover {
+      background: rgba(212, 175, 55, 0.15);
+      cursor: text;
+    }
+    [contenteditable="true"]:focus {
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 0 0 2px #A8672B;
+    }
+
+    /* Typography Classes */
+    .title-banner {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .main-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: var(--title-brown);
+      text-shadow: 2px 2px 0px #421C0E, 4px 4px 0px rgba(0,0,0,0.15);
+      letter-spacing: 2px;
+      line-height: 1.1;
+    }
+    .subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--dark-brown);
+      letter-spacing: 1.5px;
+      margin-top: 6px;
+    }
+    .tagline {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #5A4437;
+      margin-top: 6px;
+    }
+
+    /* Step Rows */
+    .step-section {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 15px;
+    }
+    .step-badge {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--green-badge);
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.55rem;
+      font-weight: 900;
+      box-shadow: 2px 3px 8px rgba(0,0,0,0.25);
+      flex-shrink: 0;
+    }
+    .badge-gold {
+      background: var(--gold-badge);
+    }
+    .step-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: var(--dark-brown);
+    }
+    .step-question {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    /* Grid Layout for Step 01 */
+    .step1-content {
+      display: grid;
+      grid-template-columns: 180px 1fr 220px;
+      gap: 20px;
+      align-items: center;
+    }
+
+    /* Cards */
+    .inspect-bubble {
+      background: var(--white-paper);
+      border: 3px solid var(--card-border);
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 15px;
+      font-family: 'Lora', serif;
+      box-shadow: 3px 4px 12px rgba(0,0,0,0.18);
+      font-size: 0.95rem;
+      line-height: 1.3;
+    }
+    .inspect-highlight {
+      font-weight: 700;
+      color: #8C2D19;
+    }
+
+    .questions-box {
+      background: var(--white-paper);
+      border: 2px solid var(--card-border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      text-align: center;
+      box-shadow: 2px 3px 8px rgba(0,0,0,0.1);
+    }
+    .questions-header {
+      font-weight: 900;
+      font-size: 0.92rem;
+      letter-spacing: 0.5px;
+    }
+    .questions-list {
+      color: #7A2E1C;
+      font-weight: 900;
+      font-size: 0.98rem;
+      margin-top: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .clues-box {
+      font-size: 0.88rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    .sticky-notes-group {
+      display: flex;
+      gap: 12px;
+      justify-content: flex-end;
+    }
+    .sticky-note {
+      background: var(--yellow-sticky);
+      border: 1px solid #D4C882;
+      box-shadow: 3px 4px 10px rgba(0,0,0,0.15);
+      padding: 12px 10px;
+      text-align: center;
+      font-weight: 900;
+      font-size: 0.82rem;
+      line-height: 1.3;
+      transform: rotate(-3deg);
+      position: relative;
+    }
+    .sticky-pin {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #C52818;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* Footsteps winding path */
+    .footprints-path {
+      text-align: center;
+      font-size: 1.4rem;
+      letter-spacing: 18px;
+      color: #422F22;
+      opacity: 0.75;
+      margin: 15px 0;
+      user-select: none;
+    }
+
+    /* Step 2 Layout */
+    .step2-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+    .lenses-list {
+      font-weight: 900;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-top: 8px;
+    }
+    .lenses-title {
+      font-size: 1.05rem;
+      font-weight: 900;
+      color: #8C3F1B;
+    }
+
+    .scroll-banner {
+      background: #F7EED2;
+      border: 2px solid #8C6B3D;
+      border-radius: 8px;
+      padding: 12px 18px;
+      text-align: center;
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 0.98rem;
+      box-shadow: 2px 3px 8px rgba(0,0,0,0.12);
+      margin-top: 15px;
+    }
+
+    /* Step 3 Layout */
+    .step3-content {
+      display: grid;
+      grid-template-columns: 240px 1fr 220px;
+      gap: 20px;
+      align-items: center;
+    }
+    .signpost-board {
+      background: #C9945B;
+      border: 3px solid #5C3415;
+      padding: 14px 12px;
+      text-align: center;
+      font-family: 'Cinzel', serif;
+      font-weight: 900;
+      font-size: 0.95rem;
+      line-height: 1.3;
+      color: #2D1608;
+      box-shadow: 3px 4px 10px rgba(0,0,0,0.2);
+      border-radius: 4px;
+    }
+
+    .four-ps-list {
+      font-weight: 900;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .spiral-pad {
+      background: var(--white-paper);
+      border: 2px solid var(--card-border);
+      border-radius: 6px;
+      padding: 16px 14px;
+      text-align: center;
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 0.98rem;
+      box-shadow: 3px 4px 12px rgba(0,0,0,0.15);
+      border-top: 10px solid #372319;
+    }
+
+    /* Footer Section */
+    .footer-section {
+      text-align: center;
+      margin-top: 35px;
+      padding-top: 20px;
+      border-top: 2px dashed #CBB590;
+    }
+    .cycle-text {
+      font-size: 1.45rem;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+    .cycle-sub {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #5A4437;
+      margin-top: 4px;
+    }
+    .quote-banner {
+      background: #F0E1C6;
+      border: 2px solid #8C6E43;
+      border-radius: 8px;
+      padding: 12px 20px;
+      margin-top: 15px;
+      display: inline-block;
+      max-width: 90%;
+    }
+    .quote-main {
+      font-family: 'Lora', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .quote-sub {
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-top: 4px;
+      color: #5A4437;
+    }
+
+    @media print {
+      body {
+        background: #FFF;
+        padding: 0;
+      }
+      .toolbar {
+        display: none !important;
+      }
+      .poster-canvas {
+        box-shadow: none;
+        max-width: 100%;
+        border: none;
+        outline: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Editor Action Bar -->
+  <div class="toolbar">
+    <div class="toolbar-title">
+      ✏️ Interactive Detective Poster Editor
+    </div>
+    <a href="/Bible_Detective_Journey.pptx" download="Bible_Detective_Journey.pptx" class="btn btn-gold">
+      📥 Download Editable PowerPoint (.PPTX)
+    </a>
+    <a href="/Bible_Detective_Journey.svg" download="Bible_Detective_Journey.svg" class="btn btn-green">
+      🎨 Download Vector (.SVG)
+    </a>
+    <button onclick="window.print()" class="btn">
+      🖨️ Print / Save as PDF
+    </button>
+    <button onclick="saveChanges()" class="btn">
+      💾 Save Changes
+    </button>
+    <button onclick="resetDefaults()" class="btn" style="background:#555;">
+      ↺ Reset Text
+    </button>
+  </div>
+
+  <!-- The Printable/Editable Poster Canvas -->
+  <div class="poster-canvas" id="posterContent">
+
+    <!-- Header -->
+    <div class="title-banner">
+      <h1 class="main-title" contenteditable="true">THE BIBLE DETECTIVE’S JOURNEY</h1>
+      <div class="subtitle" contenteditable="true">FROM OBSERVATION TO OBEDIENCE</div>
+      <div class="tagline" contenteditable="true">A simple, careful way to understand Scripture and respond faithfully.</div>
+    </div>
+
+    <!-- Sticky Notes (Top Right) -->
+    <div style="display: flex; justify-content: flex-end; margin-top: -10px; margin-bottom: 10px;">
+      <div class="sticky-notes-group">
+        <div class="sticky-note">
+          <div class="sticky-pin"></div>
+          <div contenteditable="true" style="margin-top: 8px;">
+            LOOK<br>DETECTIVE<br>NOTES
+          </div>
+        </div>
+        <div class="sticky-note" style="background: var(--white-paper); transform: rotate(4deg);">
+          <div class="sticky-pin" style="background: #2E5C8A;"></div>
+          <div contenteditable="true" style="margin-top: 8px; font-family:'Lora',serif; font-size:0.75rem;">
+            Observing<br>John 3:16<br>carefully!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- STEP 01: OBSERVATION                           -->
+    <!-- ============================================== -->
+    <div class="step-section">
+      <div class="step-header">
+        <div class="step-badge">01</div>
+        <div class="step-title">
+          <span contenteditable="true">OBSERVATION</span> – <span class="step-question" contenteditable="true">What do I see?</span>
+        </div>
+      </div>
+
+      <div class="step1-content">
+        <!-- Magnifying Glass Callout -->
+        <div class="inspect-bubble" contenteditable="true">
+          Notice<br>
+          <span class="inspect-highlight">“God loved”</span>,<br>
+          <span class="inspect-highlight">“He gave”</span>,<br>
+          and <span class="inspect-highlight">“whoever believes”</span>.
+        </div>
+
+        <!-- Center Actions -->
+        <div>
+          <div style="font-size: 0.95rem; font-weight: 900; margin-bottom: 10px;" contenteditable="true">
+            LOOK CLOSELY AT WHAT THE PASSAGE ACTUALLY SAYS.
+          </div>
+          <div class="questions-box">
+            <div class="questions-header" contenteditable="true">ASK SIX QUESTIONS:</div>
+            <div class="questions-list" contenteditable="true">WHO? WHAT? WHERE? WHEN? WHY? HOW?</div>
+          </div>
+        </div>
+
+        <!-- Right Clues Checklist -->
+        <div class="clues-box" contenteditable="true">
+          <div style="font-weight: 900; margin-bottom: 6px;">NOTICE THE TEXT’S CLUES:</div>
+          • Key words<br>
+          • Repetitions<br>
+          • Contrasts<br>
+          • Comparisons<br>
+          • Connecting words
+        </div>
+      </div>
+    </div>
+
+    <!-- Footprint Trail -->
+    <div class="footprints-path">👣 👣 👣 👣 👣 👣 👣 👣</div>
+
+    <!-- ============================================== -->
+    <!-- STEP 02: INTERPRETATION                        -->
+    <!-- ============================================== -->
+    <div class="step-section" style="margin-top: 10px;">
+      <div class="step-header" style="justify-content: flex-end;">
+        <div class="step-badge badge-gold">02</div>
+        <div class="step-title">
+          <span contenteditable="true">INTERPRETATION</span> – <span class="step-question" contenteditable="true">What does it mean?</span>
+        </div>
+      </div>
+
+      <div class="step2-content">
+        <!-- Left: Five Lenses -->
+        <div>
+          <div style="font-size: 0.98rem; font-weight: 900; margin-bottom: 10px;" contenteditable="true">
+            SEEK THE MEANING THE BIBLICAL AUTHOR INTENDED.
+          </div>
+          <div class="lenses-title" contenteditable="true">USE FIVE LENSES:</div>
+          <div class="lenses-list" contenteditable="true">
+            • CONTENT<br>
+            • CONTEXT<br>
+            • COMPARISON<br>
+            • CULTURE<br>
+            • CONSULTATION <span style="font-size: 0.85rem; font-weight: 600; font-family:'Lora',serif; font-style:italic;">(reliable study resources)</span>
+          </div>
+        </div>
+
+        <!-- Right: Study Bible & Scroll -->
+        <div>
+          <div class="scroll-banner" contenteditable="true">
+            Read John 3:1-21 and consider Jesus’ conversation with Nicodemus.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footprint Trail -->
+    <div class="footprints-path" style="transform: scaleX(-1);">👣 👣 👣 👣 👣 👣 👣 👣</div>
+
+    <!-- ============================================== -->
+    <!-- STEP 03: APPLICATION                           -->
+    <!-- ============================================== -->
+    <div class="step-section" style="margin-top: 10px;">
+      <div class="step-header">
+        <div class="step-badge">03</div>
+        <div class="step-title">
+          <span contenteditable="true">APPLICATION</span> – <span class="step-question" contenteditable="true">How should I respond?</span>
+        </div>
+      </div>
+
+      <div class="step3-content">
+        <!-- Wooden Signboard -->
+        <div class="signpost-board" contenteditable="true">
+          LET THE TRUTH SHAPE YOUR FAITH, CHARACTER, AND EVERYDAY LIFE.
+        </div>
+
+        <!-- Four P's -->
+        <div class="four-ps-list" contenteditable="true">
+          <div style="font-size: 1.05rem; font-weight: 900; margin-bottom: 6px;">THE FOUR P’S:</div>
+          • <b>PERSONAL</b> <span style="font-family:'Lora',serif; font-weight:normal;">(What is my response?)</span><br>
+          • <b>PRACTICAL</b> <span style="font-family:'Lora',serif; font-weight:normal;">(What can I do?)</span><br>
+          • <b>POSSIBLE</b> <span style="font-family:'Lora',serif; font-weight:normal;">(What can I begin?)</span><br>
+          • <b>PROVABLE</b> <span style="font-family:'Lora',serif; font-weight:normal;">(Is it grounded?)</span>
+        </div>
+
+        <!-- Spiral Notepad Prompt -->
+        <div class="spiral-pad" contenteditable="true">
+          How should God’s love shown in Christ shape my faith and life?
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- FOOTER SUMMARY                                 -->
+    <!-- ============================================== -->
+    <div class="footer-section">
+      <div class="cycle-text" contenteditable="true">
+        OBSERVE ➔ INTERPRET ➔ APPLY
+      </div>
+      <div class="cycle-sub" contenteditable="true">
+        A continuing cycle of study, faith and obedience
+      </div>
+
+      <div class="quote-banner">
+        <div class="quote-main" contenteditable="true">
+          “Observe the text carefully. Interpret it faithfully. Apply it obediently.”
+        </div>
+        <div class="quote-sub" contenteditable="true">
+          Read the passage in context • Let Scripture interpret Scripture • Respond to God’s grace.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const STORAGE_KEY = 'bible_detective_custom_text';
+
+    // Save user edits to localStorage
+    function saveChanges() {
+      const content = document.getElementById('posterContent').innerHTML;
+      localStorage.setItem(STORAGE_KEY, content);
+      alert('Your text edits have been saved in your browser!');
+    }
+
+    // Load saved edits if present
+    window.addEventListener('DOMContentLoaded', () => {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        document.getElementById('posterContent').innerHTML = saved;
+      }
+    });
+
+    // Reset back to original text
+    function resetDefaults() {
+      if (confirm('Reset all text back to the original template?')) {
+        localStorage.removeItem(STORAGE_KEY);
+        location.reload();
+      }
+    }
+  </script>
+</body>
+</html>
